@@ -33,8 +33,8 @@ const Home = () => {
       {/* <FinancialFreedomSection/> */}
       <InsightsExperts/>
       <InsideMarket/>
-      <CommunityHero/>
-      <StoxoPromo/>
+      {/* <CommunityHero/>
+      <StoxoPromo/> */}
       <MarketWrapSection/>
       <EdVisorySection/>
       <MediaPress/>

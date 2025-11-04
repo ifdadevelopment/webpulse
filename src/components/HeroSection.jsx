@@ -25,15 +25,21 @@ export default function HeroSection({
         className="lg:w-full lg:h-auto w-auto md:block hidden"
         src={desktopBg}
       />
-      <img
-        alt="Hero background (mobile)"
-        width={932}
-        height={1247}
-        className="lg:w-full lg:h-auto w-full md:hidden block"
-        src={mobileBg}
-      />
+      <div className="relative">
+        {/* Mobile gradient background */}
+        <div className="md:hidden block w-full h-[500px] bg-home-page-gradient" />
+
+        {/* Desktop image */}
+        {/* <img
+          alt="Hero background"
+          width={932}
+          height={1247}
+          className="lg:w-full lg:h-auto w-full hidden md:block"
+          src={mobileBg}
+        /> */}
+      </div>
       <div className="absolute top-0  flex lg:items-center lg:pt-0 pt-[36px] h-full w-full lg:px-0 px-[30px]">
-        <div className="max-w-[1140px] font-publicSans flex flex-col w-full md:h-auto h-full mx-auto">
+        <div className="max-w-6xl font-publicSans flex flex-col w-full md:h-auto h-full  lg:px-8 mx-auto">
           <section className="text-white">
             <h1 className="sm:text-[25px] md:text-[40px] lg:text-[55px] flex text-[28px] lg:leading-[72px] leading-[34px] md:leading-[60px] font-bold text-white flex-col">
               <span className="flex items-center">Best Digital</span>
@@ -111,36 +117,33 @@ export default function HeroSection({
               src={stoxoInputImg}
             />
           </a>
-          <div className="lg:mt-[48px] flex lg:flex-row lg:gap-[16px] gap-[12px] mt-auto md:justify-start justify-center mb-[28px] lg:mx-0 -mx-[12px]">
+          <div className="lg:mt-[48px] flex lg:flex-row lg:gap-[16px] gap-[12px] mt-auto md:justify-start mb-[28px] lg:mx-0">
+
             {/* 📞 Call Button */}
             <a
               href="tel:+919999999999"
               className="self-start"
               aria-label="Call Now"
             >
-              <div className="md:text-[18px] bg-btn-orange text-[12px] lg:py-3 py-2 lg:px-6 px-3 text-white lg:min-h-[45px] min-h-[40px] font-semibold flex items-center gap-x-[8px] font-figtree bg-home-page-gradient shadow-home-page-gradient text-center rounded-[12px]">
-                {/* <img
-                  alt="Call"
-                  width={20}
-                  height={20}
-                  className="w-[20px] h-[20px]"
-                  src={callIcon}
-                /> */}
-                <p>Call Now</p>
+              <div className="group inline-block">
+                <div className="md:text-[18px] text-[12px] lg:py-3 py-2 lg:px-6 px-3 text-white lg:min-h-[45px] min-h-[40px] font-semibold flex items-center gap-x-[8px] font-figtree bg-home-page-gradient shadow-home-page-gradient text-center rounded-[12px] transition-all duration-300 group-hover:scale-[1.05] group-hover:bg-home-hover group-hover:opacity-90">
+                  <span className="block">Call Now</span>
+                </div>
               </div>
             </a>
-            <a
-              href="mailto:info@ifda.in"
-              className="self-start"
-              aria-label="Send Query"
-            >
-              <Link to="/contactus">
-                <div className="md:text-[18px] text-[12px] lg:py-3 py-2 lg:px-6 px-3 text-white font-medium lg:min-h-[45px] min-h-[40px] flex items-center gap-x-[8px] font-figtree bg-home-page-gradient shadow-home-page-gradient text-center rounded-[12px] hover:opacity-90 transition cursor-pointer">
-                  <p>Send Query</p>
+
+            {/* 📩 Send Query Button */}
+            <Link to="/contactus" className="self-start" aria-label="Send Query">
+              <div className="group inline-block">
+                <div className="md:text-[18px] text-[12px] lg:py-3 py-2 lg:px-6 px-3 text-white font-medium lg:min-h-[45px] min-h-[40px] flex items-center gap-x-[8px] font-figtree bg-home-page-gradient shadow-home-page-gradient text-center rounded-[12px] transition-all duration-300 group-hover:scale-[1.05] group-hover:bg-home-hover group-hover:opacity-90 cursor-pointer">
+                  <span className="block">Send Query</span>
                 </div>
-              </Link>
-            </a>
+              </div>
+            </Link>
+
           </div>
+
+
 
         </div>
       </div>

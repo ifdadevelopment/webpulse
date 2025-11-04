@@ -7,7 +7,7 @@ export default function WebpulsePromo({
   underline = image.coloredLine,
   tick = image.tick,
   rightImage = image.rightImage,
-  ctaHref = "/contact/",
+  ctaHref = "/contactus",
 }) {
   return (
     <section className="w-full relative font-publicSans overflow-hidden [background:linear-gradient(52.27deg,#1F2127_4.87%,#6545D7_76.57%)]">

@@ -75,7 +75,7 @@ export default function SolutionsDigitalMarketing() {
                     <ul className="img-list">
                         <li>
                             <img
-                                src={images212.ser19} /* change to your digital marketing image */
+                                src={images212.ser13} /* change to your digital marketing image */
                                 alt="Digital Marketing"
                                 className="w-full rounded-lg shadow-lg"
                             />

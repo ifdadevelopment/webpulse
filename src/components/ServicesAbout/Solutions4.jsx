@@ -73,7 +73,7 @@ export default function Solutions4() {
                     <ul className="img-list">
                         <li>
                             <img
-                                src={images212.ser18}
+                                src={images212.sds1}
                                 alt="Software Development"
                                 className="w-full rounded-lg shadow-lg"
                             />

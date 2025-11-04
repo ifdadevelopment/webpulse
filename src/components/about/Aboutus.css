@@ -125,13 +125,15 @@
     background-color: rgb(87, 27, 119);
     border: 6px solid rgba(255, 255, 255, 0.8);
 }
-
+/* 
 .box1 div:nth-child(1) {
     top: 12%;
     left: 42%;
     animation: animate2 10s linear infinite;
+} */
+.box1 div:nth-child(1) {
+  display: none !important;
 }
-
 .box1 div:nth-child(2) {
     top: 70%;
     left: 50%;

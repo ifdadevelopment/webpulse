@@ -10,7 +10,7 @@ const appleIcon = "/assets/appleIcon.png";
 const desktopwhite = "/assets/desktopWhite.png";
 const googlePlayWhite = "/assets/googlePlayWhite.webp";
 const stoxoInputImg = "/assets/stoxoInput.webp";
-const mobileBg = "/assets/bgMob.webp"
+const mobileBg = "/assets/mobilebanner.png"
 const coloredLine = "/assets/coloredLine.webp"
 const ff1Card1 ="/assets/ff1Card1.webp"
 const ff1Card2 ="/assets/ff1Card2.webp"
@@ -118,6 +118,7 @@ const dms12 = "/assets/dms12.png"
 const cmsts = "/assets/cmsts.png"
 const sms12 = "/assets/sms12.png"
 const mads = "/assets/mads.png"
+
 export const image = {bffLogo,footerpng,mail,think,resource,deter, ipad,location,stockgroWhite,discord,twitter,insta,ldin,fb,he,iifl,sm,niacl,stock,wels,vik,lodha,jbb,brigade,aig,bajaj,logoteam,fanFav1,mascotSrc,imgSrc,handSrc,fanFav3,fanFav4,Ed1,Ed2,Ed3,Ed4,Ed5,Ed6,bannerImg,money,ht,financial,livemint,toi,rotateBg,tick,rightImage,logo11,linesBg,ps,vj,dp,ag,fc,vk,dd,pm, ss2,Logo, Bg, stockPng, tips, stocktips,heroBg,appleIcon,desktopwhite,googlePlayWhite,stoxoInputImg,mobileBg,coloredLine,ff1Card1,ff1Card2,ff1Card3,flywheel1,flywheel2,flywheel3,ff2Card,ff3Card1,ff3Card2 };
 export const images212 ={
  socialmedia,

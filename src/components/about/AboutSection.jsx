@@ -74,25 +74,25 @@ export default function AboutSection() {
             >
               <div className="about-us-content-wrap">
                 <strong className="color-secondary">About Us</strong>
-                <h1 className="h2 fw-bold">Check out What Digital Marketing Services we provide!</h1>
+                <h1 className="h2 fw-bold">Discover how our digital expertise fuels business growth.</h1>
                 <div className="animate-border mb-4"></div>
 
                 <p className="fw-bold">
-                  Webpulse Digital is committed to helping businesses across
-                  industries augment their marketing efforts and gain a
-                  competitive edge through comprehensive digital marketing
-                  solutions.
+                  At Webpulse Digital, we empower brands across industries to elevate their online presence, engage customers, and outperform competitors.
+                  From creative brand experiences to high-performance marketing campaigns, we deliver intelligent, result-driven digital solutions tailored to your goals.
+                  <br/>
+                  <strong>What We Do:</strong>
                 </p>
 
                 <ul className="list-unstyled tech-feature-list">
                   {[
                     { bold: "Creative", text: "Websites Design" },
-                    { bold: "Digital", text: "Marketing" },
-                    { bold: "Software", text: "Development" },
-                    { bold: "Corporate", text: "Film Making" },
-                    { bold: "SEO", text: "Optimization Services" },
-                    { bold: "Content", text: "Marketing" },
-                    { bold: "Google", text: "Ads Services" },
+                    { bold: "Performance-Focused", text: "Digital Marketing" },
+                    { bold: "Custom", text: "Software Development" },
+                    { bold: "Corporate ", text: "Video & Film Production" },
+                    { bold: "SEO & Organic", text: " Growth Solutions" },
+                    { bold: "Content", text: "Marketing & Branding" },
+                    { bold: "Google", text: "Ads & Paid Campaigns" },
                   ].map((item, i) => (
                     <li key={i} className="py-1 text-dark flex items-center gap-2">
                       <span className="ti-control-forward mr-2 color-secondary"><GoTriangleRight /></span>

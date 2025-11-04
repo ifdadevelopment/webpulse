@@ -17,7 +17,7 @@ const Solutions3 = () => {
             <ul className="img-list">
               <li>
                 <img
-                  src={images212.ser19}
+                  src={images212.sms12}
                   alt="Why Digital Marketing?"
                   className="w-full"
                 />

@@ -22,6 +22,7 @@ export default {
        backgroundImage: {
         'btn-orange': 'linear-gradient(180deg, #ff6f37, #ff603c)',
         'home-page-gradient': 'linear-gradient(200deg, #1f2127 -5.65%, #6545d7 45.63%, #27253a 97.6%)',
+        'home-hover':' background: linear-gradient(180deg, #1f2127 -5.65%, #34247d 45.63%, #804494 97.6%);',
         btnOrangeGradient: "linear-gradient(180deg, #ff6f37, #ff603c)",
       },
       boxShadow: {

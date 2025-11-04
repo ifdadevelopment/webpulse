@@ -1,14 +1,17 @@
 import React, { useState } from "react";
-import axios from "axios";
+import emailjs from "emailjs-com";
 import { toast } from "react-toastify";
 
 const serviceOptions = [
-  "AI & Automation Solutions",
-  "Web Development",
-  "Mobile App Development",
-  "Digital Marketing",
-  "UI/UX Design",
-  "Corporate Trainings"
+  "Website Designing & Development",
+  "Customized CRM Solutions",
+  "App Development",
+  "Graphic Design",
+  "Video Editing",
+  "Social Media Marketing",
+  "SEO & Digital Marketing",
+  "Google My Business Listing",
+  "AI Video Marketing"
 ];
 
 const Office = () => {
@@ -20,7 +23,6 @@ const Office = () => {
     service: "",
     email: "",
     message: "",
-    formHeading: "Contact Form",
   });
 
   const handleChange = (e) => {
@@ -32,36 +34,36 @@ const Office = () => {
     e.preventDefault();
     setLoading(true);
 
-    try {
-      const res = await axios.post(
-        "https://your-api-url.com/contact", // ✅ replace this with your backend API endpoint
-        formData
-      );
-
-      if (res.data) {
-        toast.success("Form submitted successfully!");
-
-        setFormData({
-          name: "",
-          phone: "",
-          service: "",
-          email: "",
-          message: "",
-          formHeading: "Contact Form",
-        });
-      }
-    } catch (err) {
-      console.error(err);
-      toast.error("Failed to submit form");
-    } finally {
-      setLoading(false);
-    }
+    emailjs
+      .send(
+        "YOUR_SERVICE_ID", // ✅ EmailJS Service ID
+        "YOUR_TEMPLATE_ID", // ✅ EmailJS Template ID
+        formData,
+        "YOUR_PUBLIC_KEY" // ✅ EmailJS Public Key
+      )
+      .then(
+        () => {
+          toast.success("Form submitted successfully!");
+          setFormData({
+            name: "",
+            phone: "",
+            service: "",
+            email: "",
+            message: "",
+          });
+        },
+        (error) => {
+          console.error(error);
+          toast.error("Failed to submit form");
+        }
+      )
+      .finally(() => setLoading(false));
   };
 
   return (
     <section className="bg-[#f7f4eb] py-10 px-4 font-publicSans mt-[calc(var(--header-height,80px))]">
       <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8">
-        
+
         {/* Form */}
         <div className="bg-white p-6 rounded-2xl shadow-md">
           <h2 className="text-2xl sm:text-3xl font-bold text-[#333333] mb-6 text-center md:text-left">
@@ -69,7 +71,6 @@ const Office = () => {
           </h2>
 
           <form className="space-y-4" onSubmit={handleSubmit}>
-            
             <input
               type="text"
               name="name"
@@ -120,8 +121,8 @@ const Office = () => {
 
             <textarea
               name="message"
-              required
               rows="4"
+              required
               value={formData.message}
               onChange={handleChange}
               placeholder="Message"
@@ -131,14 +132,15 @@ const Office = () => {
             <button
               type="submit"
               disabled={loading}
-              className="bg-[#0076FF] hover:bg-primary text-white font-semibold px-6 py-2 rounded-md transition w-fit ml-auto block"
+              className={`bg-[#0076FF] text-white font-semibold px-6 py-3 rounded-md w-full transition-all
+              ${loading ? "opacity-70 cursor-not-allowed" : "hover:bg-blue-700"}`}
             >
               {loading ? "Submitting..." : "Apply Now"}
             </button>
           </form>
         </div>
 
-        {/* Map */}
+        {/* Location Map */}
         <div className="w-full h-[400px] md:h-auto rounded-xl overflow-hidden shadow-md">
           <iframe
             title="Location"

@@ -59,7 +59,7 @@ export default function Solutions2() {
             <ul className="img-list">
               <li>
                 <img
-                 src={images212.ser18}
+                 src={images212.mapd}
                   alt="Mobile Application"
                   className="w-full rounded-lg shadow-lg"
                 />

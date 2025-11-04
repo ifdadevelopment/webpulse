@@ -1,11 +1,13 @@
 import React, { useState } from "react";
 import {
-  FaEnvelopeOpenText,
-  FaSatelliteDish,
-  FaStar,
-  FaIcons,
-  FaLaptopCode,
-  FaAngleRight,
+  FaSearch,
+  FaLightbulb,
+  FaPaintBrush,
+  FaCogs,
+  FaRocket,
+  FaChartLine,
+  FaCrown,
+  FaAngleRight
 } from "react-icons/fa";
 import { motion } from "framer-motion";
 import { images212 } from "../../../data";
@@ -20,36 +22,42 @@ const OutstandingSection = () => {
     setActiveTab(tabId);
   };
 
+
   const tabs = [
     {
       id: "feature-tab-1",
-      icon: <FaEnvelopeOpenText size={24} />,
+      icon: <FaSearch size={22} />,
       title: "Understand",
     },
     {
       id: "feature-tab-2",
-      icon: <FaSatelliteDish size={24} />,
+      icon: <FaLightbulb size={22} />,
       title: "Strategize",
     },
     {
       id: "feature-tab-3",
-      icon: <FaStar size={24} />,
+      icon: <FaPaintBrush size={22} />,
       title: "Create",
     },
-    { id: "feature-tab-4", icon: <FaIcons size={24} />, title: "Build & Automate" },
+    {
+      id: "feature-tab-4",
+      icon: <FaCogs size={22} />,
+      title: "Build & Automate",
+    },
     {
       id: "feature-tab-5",
-      icon: <FaLaptopCode size={24} />,
+      icon: <FaRocket size={22} />,
       title: "Launch & Accelerate",
     },
     {
       id: "feature-tab-6",
-      icon: <FaLaptopCode size={24} />,
+      icon: <FaChartLine size={22} />,
       title: "Measure & Optimize",
     },
+    // Optional future step – uncomment when needed
     // {
     //   id: "feature-tab-7",
-    //   icon: <FaLaptopCode size={24} />,
+    //   icon: <FaCrown size={22} />,
     //   title: "Scale & Dominate",
     // },
   ];
@@ -72,7 +80,7 @@ const OutstandingSection = () => {
       id: "feature-tab-2",
       heading: "Strategize",
       desc: "A winning plan for brand visibility, engagement & revenue.",
-      list: ["Digital growth roadmap", "Funnel architecture & lead systems", "Messaging & brand positioning","Platform & content strategy"],
+      list: ["Digital growth roadmap", "Funnel architecture & lead systems", "Messaging & brand positioning", "Platform & content strategy"],
       image: images212.ser10,
       link: "seo",
     },
@@ -93,7 +101,7 @@ const OutstandingSection = () => {
       id: "feature-tab-4",
       heading: "Build & Automate",
       desc: "Technology + AI = scalable efficiency.",
-      list: ["Website & e-commerce development", "CRM & marketing automation setup", "AI lead nurturing systems","Analytics & tracking infrastructure"],
+      list: ["Website & e-commerce development", "CRM & marketing automation setup", "AI lead nurturing systems", "Analytics & tracking infrastructure"],
       image: images212.ser12,
       link: "social-media",
     },
@@ -101,7 +109,7 @@ const OutstandingSection = () => {
       id: "feature-tab-5",
       heading: "Launch & Accelerate",
       desc: "Go-to-market with speed & strategic precision.",
-      list: ["Organic + Paid campaign rollout", "SEO & content execution", "Google, Meta & LinkedIn ads","Influencer + remarketing funnels"],
+      list: ["Organic + Paid campaign rollout", "SEO & content execution", "Google, Meta & LinkedIn ads", "Influencer + remarketing funnels"],
       image: images212.ser14,
       link: "web-design",
     },
@@ -109,7 +117,7 @@ const OutstandingSection = () => {
       id: "feature-tab-6",
       heading: "Measure & Optimize",
       desc: "Continuous improvement = continuous growth.",
-      list: ["Deep analytics & performance reporting", "A/B testing for pages, creatives & ads", "Conversion rate optimization (CRO)","Budget reallocation to highest performers"],
+      list: ["Deep analytics & performance reporting", "A/B testing for pages, creatives & ads", "Conversion rate optimization (CRO)", "Budget reallocation to highest performers"],
       image: images212.ser14,
       link: "web-design",
     },
@@ -176,22 +184,20 @@ const OutstandingSection = () => {
               {tabs.map(({ id, icon, title }) => (
                 <li
                   key={id}
-                  className={`nav-item flex-shrink-0  text-[#6545d7]  ${activeTab === id ? "active" : ""
-                    }`}
+                  className={`nav-item flex-shrink-0 ${activeTab === id ? "active" : ""}`}
                 >
                   <a
-                    className={`nav-link text-center ${activeTab === id ? "active" : ""
+                    className={`nav-link flex flex-col items-center justify-center gap-1 text-center ${activeTab === id ? "active text-[#804494]" : "text-[#6545d7]"
                       }`}
                     href={`#${id}`}
                     onClick={(e) => handleTabClick(e, id)}
                     style={{
-                      display: "inline-block",
                       minWidth: "110px",
                       whiteSpace: "normal",
                     }}
                   >
                     <span
-                      className="fa-solid icon-sm mb-1 d-flex justify-content-center align-items-center"
+                      className="flex items-center justify-center rounded-full transition-all duration-300"
                       style={{
                         width: "40px",
                         height: "40px",
@@ -200,9 +206,10 @@ const OutstandingSection = () => {
                     >
                       {icon}
                     </span>
-                    <h6 className="mb-0">{title}</h6>
+                    <h6 className="mb-0 text-sm font-medium">{title}</h6>
                   </a>
                 </li>
+
               ))}
             </ul>
           </div>

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { motion } from "framer-motion";
 import { images212 } from "../../../data";
 import "./WhyChooseUs1.css";
@@ -6,19 +6,16 @@ import { fadeAnimations, animationConfig } from "../../../animations";
 import { FaCheckCircle } from "react-icons/fa";
 
 const WhyChooseUs1 = () => {
-  const reasons = [
-    "Expert team with real-world experience",
-    "Tailored strategies for every business",
-    "High-quality creative & technical solutions",
-    "Dedicated support & transparent communication",
-    "Results-driven digital growth approach",
-  ];
+  const [showMore, setShowMore] = useState(false);
+
+  const reasons = [{ text: (<> <strong>Result-Driven Strategies:</strong> Every campaign is planned with measurable outcomes and real ROI in mind. </>), }, { text: (<> <strong>Creative + Technical Expertise:</strong> A powerful blend of design, marketing, and development excellence. </>), }, { text: (<> <strong>Custom, Industry-Specific Solutions:</strong> Tailored strategies that match your business goals and audience. </>), }, { text: (<> <strong>Dedicated Support & Collaboration:</strong> We work alongside you as your long-term digital success partner. </>), }, { text: (<> <strong>Transparent Reporting:</strong> Clear performance data, consistent communication, and honest updates. </>), }, { text: (<> <strong>Proven Track Record:</strong> Trusted by businesses across industries and geographies. </>), },];
+
+  const visibleItems = showMore ? reasons : reasons.slice(0, 4);
 
   return (
     <section className="why-choose-us ptb-70 font-publicSans overflow-hidden md:overflow-visible">
       <div className="max-w-6xl mx-auto px-4">
-        
-        {/* ✅ FLEX PARENT — aligned start */}
+
         <div className="flex flex-col lg:flex-row items-start justify-between gap-10">
 
           {/* ✅ Left Column */}
@@ -30,35 +27,41 @@ const WhyChooseUs1 = () => {
             viewport={animationConfig.viewport}
           >
             <div className="text-start">
-              <strong className="color-secondary uppercase text-sm">Why Choose Us</strong>
-              
+              <strong className="color-secondary uppercase text-sm">Why Choose Webpulse Digital</strong>
+
               <h2 className="text-xl md:text-3xl font-bold leading-snug mt-2 text-[#253462]">
-                Optimal Business Consulting Solutions
+                Your Growth Partner — Not Just Another Agency
               </h2>
-              
+
               <span className="animate-border mb-4 block"></span>
 
               <p className="fw-bold mb-6 text-sm md:text-base leading-relaxed text-gray-700">
-                We empower brands with strategic planning, digital expertise, 
-                and result-oriented consulting to transform visions into high-impact outcomes.
+                At Webpulse Digital, our mission is simple:
+                Build brands, generate customers, and scale businesses with smart digital systems.
               </p>
 
-              {/* Bullet List */}
+              {/* ✅ Bullet List */}
               <ul className="space-y-3">
-                {reasons.map((item, index) => (
+                {visibleItems.map((item, index) => (
                   <motion.li
                     key={index}
                     initial={{ opacity: 0, x: -20 }}
                     whileInView={{ opacity: 1, x: 0 }}
                     transition={{ duration: 0.4, delay: index * 0.15 }}
                     viewport={{ once: true }}
-                    className="flex items-start gap-3 text-sm md:text-base text-[#253462] font-medium"
+                    className="flex flex-wrap items-start gap-3 text-sm md:text-base text-[#253462] font-medium"
                   >
                     <FaCheckCircle className="text-[#804494] text-lg mt-[2px]" />
-                    {item}
+                    <span className="flex-1 leading-relaxed">{item.text}</span>
                   </motion.li>
                 ))}
               </ul>
+              <button
+                onClick={() => setShowMore(!showMore)}
+                className="mt-4 text-white font-semibold mr-3 px-3 py-3 rounded-lg shadow hover:text-white secondary-solid-btn  hover:text-[#56309b] transition"
+              >
+                {showMore ? "Read Less" : "Read More"}
+              </button>
             </div>
           </motion.div>
 
@@ -76,7 +79,6 @@ const WhyChooseUs1 = () => {
               className="w-full max-w-[460px] rounded-lg shadow-lg object-contain"
             />
           </motion.div>
-
         </div>
       </div>
     </section>

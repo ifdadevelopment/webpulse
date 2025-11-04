@@ -3,13 +3,15 @@ import { motion } from "framer-motion";
 import { images212 } from "../../../data";
 import "./WhyChooseUs1.css";
 import { fadeAnimations, animationConfig } from "../../../animations";
+import { FaCheckCircle } from "react-icons/fa";
 
 const WhyChooseUs1 = () => {
-  const skills = [
-    "Web Development",
-    "Film Making",
-    "Social Media Management",
-    "Digital Marketing",
+  const reasons = [
+    "Expert team with real-world experience",
+    "Tailored strategies for every business",
+    "High-quality creative & technical solutions",
+    "Dedicated support & transparent communication",
+    "Results-driven digital growth approach",
   ];
 
   return (
@@ -26,44 +28,33 @@ const WhyChooseUs1 = () => {
             viewport={animationConfig.viewport}
           >
             <div className="why-choose-us-wrap text-start">
-              <strong className="color-secondary">Why Choose Us</strong>
-              <h2 className="text-xl md:text-3xl font-bold leading-snug mt-2">
+              <strong className="color-secondary uppercase text-sm">Why Choose Us</strong>
+              <h2 className="text-xl md:text-3xl font-bold leading-snug mt-2 text-[#253462]">
                 Optimal Business Consulting Solutions
               </h2>
               <span className="animate-border mb-4 block"></span>
 
-              <p className="fw-bold mb-6 text-sm md:text-base leading-relaxed">
-                Optimal Business Consulting Solutions is a premier consulting
-                firm dedicated to supporting businesses in achieving their
-                strategic goals and enhancing overall performance.
+              <p className="fw-bold mb-6 text-sm md:text-base leading-relaxed text-gray-700">
+                We empower brands with strategic planning, digital expertise, 
+                and result-oriented consulting to transform visions into high-impact outcomes.
               </p>
 
-              <div className="skill-content-wrap">
-                {skills.map((skill, index) => (
-                  <div className="progress-item mb-4" key={index}>
-                    <div className="progress-title">
-                      <h6 className="flex justify-between items-center text-sm md:text-base">
-                        {skill}
-                        <span className="progress-number font-semibold">100%</span>
-                      </h6>
-                    </div>
-
-                    <div className="progress bg-gray-200 rounded-full h-2 mt-1 overflow-hidden">
-                      <motion.span
-                        className="progress-line bg-[#804494] block h-2 rounded-full"
-                        initial={{ width: 0 }}
-                        whileInView={{ width: "100%" }}
-                        transition={{
-                          duration: 1.2,
-                          ease: "easeInOut",
-                          delay: index * 0.1,
-                        }}
-                        viewport={{ once: true }}
-                      />
-                    </div>
-                  </div>
+              {/* ✅ Bullet List with Motion */}
+              <ul className="space-y-3">
+                {reasons.map((item, index) => (
+                  <motion.li
+                    key={index}
+                    initial={{ opacity: 0, x: -20 }}
+                    whileInView={{ opacity: 1, x: 0 }}
+                    transition={{ duration: 0.4, delay: index * 0.15 }}
+                    viewport={{ once: true }}
+                    className="flex items-start gap-2 text-sm md:text-base text-[#253462] font-medium"
+                  >
+                    <FaCheckCircle className="text-[#804494] text-lg mt-1" />
+                    {item}
+                  </motion.li>
                 ))}
-              </div>
+              </ul>
             </div>
           </motion.div>
 

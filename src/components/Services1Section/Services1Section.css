@@ -41,7 +41,7 @@
     position: relative;
     z-index: 0;
     text-align: center;
-    padding-top: 90px !important;
+    padding-top: 70px !important;
     /* box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px, rgb(209, 213, 219) 0px 0px 0px 1px inset; */
     /* border-radius: 15px; */
     border-radius: 35px 4px 35px 4px;
@@ -50,7 +50,7 @@
 }
 
 .Scard p {
-    font-size: 18px;
+    font-size: 16px;
 }
 
 /* 
@@ -151,7 +151,7 @@ h4 {
 
 .h5,
 h5 {
-    font-size: 1.25rem
+    font-size: 1.20rem
 }
 
 .h6,

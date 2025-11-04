@@ -24,8 +24,8 @@ const Home = () => {
       <HeroSection />
       <AboutSection/>
       {/* <Services2Section/> */}
-      <Services1Section/>
       <WhyChooseUs1/>
+      <Services1Section/>
       <StoxoBanner/>
       <OutstandingSection/>
       <WorkProcessSection/>

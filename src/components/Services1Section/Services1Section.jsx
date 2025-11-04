@@ -6,17 +6,38 @@ import { fadeAnimations, animationConfig } from "../../../animations";
 
 export default function Services1Section() {
   const services = [
-    {
-      title: "Digital Marketing Services",
-      text: "Digital marketing refers to the promotion of products, services or brands through digital channels such as search engines, websites, social media, email and mobile apps.",
-      img: images212.dms12,
-      width: "83%",
+     {
+      title: "Website Designing & Development",
+      text: "Website Designing & Development refers to creating responsive and visually engaging websites that improve user experience and boost online presence.",
+      img: images212.sms12,
+      width: "88%",
+      dark: true,
+    },
+      {
+      title: "Customized CRM Solutions",
+      text: "Customized CRM Solutions refers to building tailored customer management systems that help businesses streamline operations, automate workflows, and enhance customer relationships.",
+      img: images212.cmsts,
+      width: "88%",
       dark: false,
     },
-    {
-      title: "Content Marketing",
-      text: "Content marketing is a strategic approach that involves creating and distributing valuable, relevant, and consistent content to attract and retain a clearly defined audience.",
-      img: images212.cmsts,
+   {
+      title: "Mobile App Development",
+      text: "Mobile App Development refers to creating mobile applications that improve user experience, increase accessibility, and enable businesses to engage customers on the go.",
+      img: images212.seosr,
+      width: "80%",
+      dark: true,
+    },
+      {
+      title: "Graphic Designing",
+      text: "Graphic design is the art and practice of creating visual content to communicate information and ideas to a specific audience.",
+      img: images212.gds1,
+      width: "88%",
+      dark: false,
+    },
+     {
+      title: "Video Editing",
+      text: "Video Editing refers to creating, trimming, enhancing, and combining video footage with sound, graphics, and effects to produce engaging and professional visual content for brands and audiences.",
+      img: images212.ems1,
       width: "88%",
       dark: true,
     },
@@ -27,27 +48,28 @@ export default function Services1Section() {
       width: "88%",
       dark: false,
     },
-    {
-      title: "SEO Services",
-      text: "SEO services are essential for businesses looking to establish an online presence and attract more prospective customers.",
-      img: images212.seosr,
-      width: "80%",
+   {
+      title: "SEO & Digital Marketing",
+      text: "SEO & Digital Marketing refers to promoting products, services, or brands through online platforms such as search engines, websites and social media to increase visibility, traffic, and conversions.",
+      img: images212.dms12,
+      width: "83%",
       dark: true,
     },
     {
-      title: "Email Marketing",
-      text: "Email marketing is a powerful and effective tool in reaching out to potential customers and retaining existing ones.",
-      img: images212.ems1,
-      width: "88%",
+      title: "Google My Business Listing",
+      text: "Google My Business Listing refers to creating and optimizing a business profile on Google Search & Maps to improve local visibility, attract nearby customers, and increase leads through local searches.",
+      img: images212.dms12,
+      width: "83%",
       dark: false,
     },
     {
-      title: "Graphic Designing",
-      text: "Graphic design is the art and practice of creating visual content to communicate information and ideas to a specific audience.",
-      img: images212.gds1,
+      title: "AI Video Marketing",
+      text: "AI Video Marketing refers to creating and distributing video content using AI tools to automate video production, enhance creativity, personalize messaging, and improve audience engagement across digital platforms.",
+      img: images212.cmsts,
       width: "88%",
       dark: true,
     },
+   
   ];
 
   const animationPattern = [
@@ -76,7 +98,7 @@ export default function Services1Section() {
         </div>
 
         {/* Cards */}
-        <div className="row mt-2">
+        <div className="row mt-2 max-w-6xl mx-auto lg:px-6">
           {services.map((srv, i) => {
             const animation = animationPattern[i % 3]; 
             return (
@@ -91,7 +113,7 @@ export default function Services1Section() {
                 }}
                 viewport={animationConfig.viewport}
               >
-                <div className={`Scard p-8 ${srv.dark ? "bgset" : ""}`}>
+                <div className={`Scard p-6 ${srv.dark ? "bgset" : ""}`}>
                   <h5
                     className={`h5 cardheading ${
                       srv.dark ? "text-white" : "text-black"

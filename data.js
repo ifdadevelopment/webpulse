@@ -144,6 +144,30 @@ const buildautomate = "/assets/buildautomate.png"
 const launchaccelerate = "/assets/launchaccelerate.png"
 const measureoptimize = "/assets/measureoptimize.png"
 const servicesBanner  = "/assets/servicesBanner.png"
+const AffiliateMarketing = "/assets/AffiliateMarketing.png"
+const ContentCuration = "/assets/ContentCuration.png"
+const ContentMarketing = "/assets/ContentMarketing.png"
+const ConversionRate = "/assets/ConversionRate.png"
+const CrisisManagement = "/assets/CrisisManagement.png"
+const DigitalAdvertising = "/assets/DigitalAdvertising.png"
+const EffectiveSocialMediaMarketing = "/assets/EffectiveSocialMediaMarketing.png"
+const emailmarketing = "/assets/emailmarketing.png"
+const InfluencerMarketing = "/assets/InfluencerMarketing.png"
+const IntegratedDigital = "/assets/IntegratedDigital.png"
+const LeadGeneration = "/assets/LeadGeneration.png"
+const LocalSEO = "/assets/LocalSEO.png"
+const LongFormContent = "/assets/LongFormContent.png"
+const MarketingAutomation = "/assets/MarketingAutomation.png"
+const PaidMediastrategy = "/assets/PaidMediastrategy.png"
+const PersonalizationStrategiesforEnhancedUX = "/assets/PersonalizationStrategiesforEnhancedUX.png"
+const UXUIDesigninDigitalMarketing = "/assets/UXUIDesigninDigitalMarketing.png"
+const VideoContent = "/assets/VideoContent.png"
+const VoiceSearch = "/assets/VoiceSearch.png"
+const WebsiteOptimizationEnsuringaSeamlessUserExperience = "/assets/WebsiteOptimizationEnsuringaSeamlessUserExperience.png"
+const ThePowerofBrandingintheDigitalAge = "/assets/ThePowerofBrandingintheDigitalAge.png"
+const TheImportanceofDataAnalyticsinMarketing  = "/assets/TheImportanceofDataAnalyticsinMarketing.png"
+const SocialProof  = "/assets/SocialProof.png"
+const SEOBestPracticesAComprehensiveGuide   = "/assets/SEOBestPracticesAComprehensiveGuide.png"
 export const image = {bffLogo,ramandeep,manoj,sajid,renuka,kundan,aditya,footerpng,mail,think,resource,deter, ipad,location,stockgroWhite,discord,twitter,insta,ldin,fb,he,iifl,sm,niacl,stock,wels,vik,lodha,jbb,brigade,aig,bajaj,logoteam,fanFav1,mascotSrc,imgSrc,handSrc,fanFav3,fanFav4,Ed1,Ed2,Ed3,Ed4,Ed5,Ed6,bannerImg,money,ht,financial,livemint,toi,rotateBg,tick,rightImage,logo11,linesBg,ps,vj,dp,ag,fc,vk,dd,pm, ss2,Logo, Bg, stockPng, tips, stocktips,heroBg,appleIcon,desktopwhite,googlePlayWhite,stoxoInputImg,mobileBg,coloredLine,ff1Card1,ff1Card2,ff1Card3,flywheel1,flywheel2,flywheel3,ff2Card,ff3Card1,ff3Card2 };
 export const images212 ={
  socialmedia,
@@ -162,7 +186,7 @@ export const images212 ={
   tabImg,
   t6Img1,
   about1,
-  mike1,
+  mike1,WebsiteOptimizationEnsuringaSeamlessUserExperience,VoiceSearch,VideoContent,UXUIDesigninDigitalMarketing,ThePowerofBrandingintheDigitalAge,TheImportanceofDataAnalyticsinMarketing,SocialProof,SEOBestPracticesAComprehensiveGuide,PersonalizationStrategiesforEnhancedUX,PaidMediastrategy,MarketingAutomation,LongFormContent,LocalSEO,LeadGeneration,IntegratedDigital,InfluencerMarketing,emailmarketing,EffectiveSocialMediaMarketing,DigitalAdvertising,CrisisManagement,ConversionRate,ContentMarketing,ContentCuration,AffiliateMarketing,
   servicesBanner,
   understand,strategize,create,buildautomate,launchaccelerate,measureoptimize,
   prof1,

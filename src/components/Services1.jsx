@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-
+import {images212} from "../../data"
 const categories = [
   {
     title: "SEO & Optimization",
@@ -7,22 +7,22 @@ const categories = [
       {
         title: "SEO Best Practices: A Comprehensive Guide",
         desc: "Master evergreen SEO principles like on-page optimization, backlinks, and content quality to ensure long-term search visibility and consistent website growth.",
-        icon: "https://cdn-icons-png.flaticon.com/512/979/979585.png",
+        icon: images212.SEOBestPracticesAComprehensiveGuide,
       },
       {
         title: "Website Optimization: Ensuring a Seamless User Experience",
         desc: "Timeless web practices like responsive design, fast load speeds, and user-centric layouts to convert visitors into loyal customers.",
-        icon: "https://cdn-icons-png.flaticon.com/512/9068/9068644.png",
+        icon: images212.WebsiteOptimizationEnsuringaSeamlessUserExperience,
       },
       {
         title: "Local SEO: Dominate Your Local Market",
         desc: "Optimize your Google My Business, local keywords, and citations to ensure your business ranks for nearby customers and regions.",
-        icon: "https://cdn-icons-png.flaticon.com/512/535/535239.png",
+        icon: images212.LocalSEO,
       },
       {
         title: "Voice Search & Smart Devices Optimization",
         desc: "Optimize content for voice search and smart assistants to stay ahead as the world moves toward voice-based interactions.",
-        icon: "https://cdn-icons-png.flaticon.com/512/901/901188.png",
+        icon: images212.VoiceSearch,
       },
     ],
   },
@@ -32,22 +32,22 @@ const categories = [
       {
         title: "Content Marketing Strategy: Creating Value for the Long Term",
         desc: "Develop a strategy focused on evergreen content, storytelling, and education to build brand trust and attract organic traffic for years.",
-        icon: "https://cdn-icons-png.flaticon.com/512/1828/1828884.png",
+        icon: images212.ContentMarketing,
       },
       {
         title: "The Power of Branding in the Digital Age",
         desc: "Build a consistent, authentic, and visually appealing brand identity through storytelling and design that stands the test of time.",
-        icon: "https://cdn-icons-png.flaticon.com/512/3135/3135715.png",
+        icon: images212.ThePowerofBrandingintheDigitalAge,
       },
       {
         title: "The Importance of Long-Form Content",
         desc: "Craft in-depth articles, whitepapers, and guides that attract backlinks, rank higher, and deliver lasting audience value.",
-        icon: "https://cdn-icons-png.flaticon.com/512/786/786432.png",
+        icon: images212.TheImportanceofDataAnalyticsinMarketing,
       },
       {
         title: "Content Curation: Using Existing Content to Engage Audiences",
         desc: "Repurpose and curate valuable industry content to maintain engagement while positioning yourself as a thought leader.",
-        icon: "https://cdn-icons-png.flaticon.com/512/992/992651.png",
+        icon: images212.ContentCuration,
       },
     ],
   },

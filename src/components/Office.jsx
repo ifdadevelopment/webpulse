@@ -50,7 +50,7 @@ const Office = () => {
         import.meta.env.VITE_EMAILJS_PUBLIC_KEY
       )
       .then(() => {
-        toast.success(" ✅ Form submitted successfully!");
+        toast.success("✅ Form submitted successfully!");
 
         setFormData({
           name: "",
@@ -62,7 +62,7 @@ const Office = () => {
       })
       .catch((err) => {
         console.error("EmailJS Error:", err);
-        toast.error("❌ Failed to submit form");
+        toast.error("❌ Failed to send message. Try again!");
       })
       .finally(() => setLoading(false));
   };
@@ -138,9 +138,9 @@ const Office = () => {
             <button
               type="submit"
               disabled={loading}
-              className={`bg-[#0076FF] text-white font-semibold px-6 py-3 rounded-md w-full transition-all
-                ${loading ? "opacity-70 cursor-not-allowed" : "hover:bg-blue-700"}
-              `}
+              className={`bg-[#0076FF] text-white font-semibold px-6 py-3 rounded-md w-full transition-all ${
+                loading ? "opacity-70 cursor-not-allowed" : "hover:bg-blue-700"
+              }`}
             >
               {loading ? "Sending..." : "Apply Now"}
             </button>
@@ -158,7 +158,6 @@ const Office = () => {
             className="w-full border-0"
           ></iframe>
         </div>
-
       </div>
     </section>
   );

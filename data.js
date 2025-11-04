@@ -79,7 +79,12 @@ const ipad = "/assets/ipad-1.png"
 const think ="/assets/thinking.png"
 const resource ="/assets/resource-allocation.png"
 const deter ="/assets/determination.png"
-
+const ramandeep ="/assets/ramandeep.png"
+const manoj ="/assets/manoj.png"
+const sajid ="/assets/sajid.png"
+const renuka ="/assets/renuka.png"
+const kundan ="/assets/kundan.png"
+const aditya ="/assets/aditya.png"
 const software = "../assets/soft_dev_icon.png";
 const dm = "../assets/dm_icon.webp";
 const seo21 = "/assets/seo1_icon-removebg-preview.png";
@@ -110,16 +115,20 @@ const ser13 = "/assets/ser1212.png"
 const ser14 = "/assets/ser14.png"
 const whychoose = "/assets/whychoose.png"
 const aboutus = "/assets/aboutus.png"
-const ems1 = "/assets/ems.png"
-const gds1 = "/assets/gds.png"
-const seosr = "/assets/seosr.png"
+const ems1 = "/assets/servideoediting.png"
+const gds1 = "/assets/sergraphicdesign.png"
+const seosr = "/assets/sermobileappdevelopment.png"
 const sds1 = "/assets/sds.png"
 const dms12 = "/assets/dms12.png"
-const cmsts = "/assets/cmsts.png"
-const sms12 = "/assets/sms12.png"
+const cmsts = "/assets/sercrm.png"
+const sms12 = "/assets/serwdnd.png"
 const mads = "/assets/mads.png"
+const smm2 = "/assets/sersocialmedia.png"
+const gbls = "/assets/sergooglemybusiness.png"
+const aimar = "/assets/seraivideomarketing.png"
+const seodm = "/assets/serdigitalmarketing.png"
 
-export const image = {bffLogo,footerpng,mail,think,resource,deter, ipad,location,stockgroWhite,discord,twitter,insta,ldin,fb,he,iifl,sm,niacl,stock,wels,vik,lodha,jbb,brigade,aig,bajaj,logoteam,fanFav1,mascotSrc,imgSrc,handSrc,fanFav3,fanFav4,Ed1,Ed2,Ed3,Ed4,Ed5,Ed6,bannerImg,money,ht,financial,livemint,toi,rotateBg,tick,rightImage,logo11,linesBg,ps,vj,dp,ag,fc,vk,dd,pm, ss2,Logo, Bg, stockPng, tips, stocktips,heroBg,appleIcon,desktopwhite,googlePlayWhite,stoxoInputImg,mobileBg,coloredLine,ff1Card1,ff1Card2,ff1Card3,flywheel1,flywheel2,flywheel3,ff2Card,ff3Card1,ff3Card2 };
+export const image = {bffLogo,ramandeep,manoj,sajid,renuka,kundan,aditya,footerpng,mail,think,resource,deter, ipad,location,stockgroWhite,discord,twitter,insta,ldin,fb,he,iifl,sm,niacl,stock,wels,vik,lodha,jbb,brigade,aig,bajaj,logoteam,fanFav1,mascotSrc,imgSrc,handSrc,fanFav3,fanFav4,Ed1,Ed2,Ed3,Ed4,Ed5,Ed6,bannerImg,money,ht,financial,livemint,toi,rotateBg,tick,rightImage,logo11,linesBg,ps,vj,dp,ag,fc,vk,dd,pm, ss2,Logo, Bg, stockPng, tips, stocktips,heroBg,appleIcon,desktopwhite,googlePlayWhite,stoxoInputImg,mobileBg,coloredLine,ff1Card1,ff1Card2,ff1Card3,flywheel1,flywheel2,flywheel3,ff2Card,ff3Card1,ff3Card2 };
 export const images212 ={
  socialmedia,
   film,
@@ -140,7 +149,7 @@ export const images212 ={
   mike1,
   prof1,
   ser11,ser10,ser12,ser13,ser14,
-  whychoose,aboutus,ems1,gds1,seosr,sds1,dms12,cmsts,sms12,mads
+  whychoose,aboutus,ems1,gds1,seosr,sds1,dms12,cmsts,sms12,mads,smm2,gbls,aimar,seodm
 }
 export const blogs = [
   {

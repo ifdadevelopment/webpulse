@@ -41,10 +41,10 @@ export default function HeroSection({
       <div className="absolute top-0  flex lg:items-center lg:pt-0 pt-[36px] h-full w-full lg:px-0 px-[30px]">
         <div className="max-w-6xl font-publicSans flex flex-col w-full md:h-auto h-full  lg:px-8 mx-auto">
           <section className="text-white">
-            <h1 className="sm:text-[25px] md:text-[40px] lg:text-[55px] flex text-[28px] lg:leading-[72px] leading-[34px] md:leading-[60px] font-bold text-white flex-col">
+            <h1 className="sm:text-[25px] md:text-[40px] lg:text-[55px] flex text-[24px] lg:leading-[72px] leading-[34px] md:leading-[60px] font-bold text-white flex-col">
               <span className="flex items-center">Leading </span>
               <span>Digital Marketing Company </span>
-              <span className="max-w-52 sm:text-[25px] md:text-[40px] lg:text-[55px] mt-[16px] text-[14px] lg:leading-[40px] leading-[18px] md:leading-[32px] font-medium flex items-center lg:max-w-[720px]">
+              <span className="max-w-52 sm:text-[25px] md:text-[40px] lg:text-[55px] mt-[16px] lg:leading-[40px] leading-[16px] md:leading-[32px] font-medium flex items-center lg:max-w-[720px]">
                 in Delhi NCR
               </span>
             </h1>
@@ -64,7 +64,7 @@ export default function HeroSection({
           </section>
 
           <a
-            className="rounded-[20px] md:mt-[38px] mt-[72px] relative self-start"
+            className="rounded-[20px] md:mt-[38px] mt-[48px] relative self-start"
             href={stoxoHref}
             aria-label="Ask Stoxo"
             title="Ask Stoxo"
@@ -117,7 +117,7 @@ export default function HeroSection({
               src={stoxoInputImg}
             />
           </a>
-          <div className="lg:mt-[48px] flex lg:flex-row lg:gap-[16px] gap-[12px] mt-auto md:justify-start mb-[28px] lg:mx-0">
+          <div className="lg:mt-[48px] flex lg:flex-row lg:gap-[16px] gap-[12px] mt-auto md:justify-start mb-[43px] lg:mx-0">
 
             {/* 📞 Call Button */}
             <a

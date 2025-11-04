@@ -27,7 +27,7 @@ const ServicesAbout = () => {
         </div>
 
         {/* Content Box Section */}
-        <div className="col-lg-6 content_box aos-init aos-animate">
+        <div className="col-lg-6 content_box py-4 aos-init aos-animate">
           <motion.div
             initial={fadeAnimations.right.initial}
             whileInView={fadeAnimations.right.whileInView}

@@ -2,14 +2,14 @@ import React, { useEffect, useState } from "react";
 import { image } from "../../data";
 
 const EXPERTS = [
-  { name: "Priyank Sharma", avatar: image.ps, rotateBg: image.rotateBg, tags: "Market Commentry", followers: "8k followers" },
-  { name: "Vibhu Jain", avatar: image.vj, rotateBg: image.rotateBg, tags: "Technical, Growth", followers: "6k followers" },
-  { name: "Dhwani Patel", avatar: image.dp, rotateBg: image.rotateBg, tags: "Quantitative, Growth", followers: "5k followers" },
-  { name: "Abhishek Garg", avatar: image.ag, rotateBg: image.rotateBg, tags: "Technical, Swing Trading", followers: "1k+ followers" },
-  { name: "Foram Chheda", avatar: image.fc, rotateBg: image.rotateBg, tags: "Index Strategies, Growth", followers: "1k followers" },
-  { name: "Vimal K", avatar: image.vk, rotateBg: image.rotateBg, tags: "Futures & Options, Technical", followers: "9k followers" },
-  { name: "Dipen Doshi", avatar: image.dd, rotateBg: image.rotateBg, tags: "Value Investing, Dividend", followers: "17k followers" },
-  { name: "Prabhat Mittal", avatar: image.pm, rotateBg: image.rotateBg, tags: "Futures & Options, Growth", followers: "16k followers" },
+  { name: "Ramandeep Singh", avatar: image.ramandeep, rotateBg: image.rotateBg, tags: "Market Commentry", followers: "8k followers" },
+  { name: "Manoj Rawat", avatar: image.manoj, rotateBg: image.rotateBg, tags: "Technical, Growth", followers: "6k followers" },
+  { name: "Sajjid", avatar: image.sajid, rotateBg: image.rotateBg, tags: "Quantitative, Growth", followers: "5k followers" },
+  { name: "Renuka", avatar: image.renuka, rotateBg: image.rotateBg, tags: "Technical, Swing Trading", followers: "1k+ followers" },
+  { name: "Kundan", avatar: image.kundan, rotateBg: image.rotateBg, tags: "Index Strategies, Growth", followers: "1k followers" },
+  { name: "Aditya", avatar: image.aditya, rotateBg: image.rotateBg, tags: "Futures & Options, Technical", followers: "9k followers" },
+  // { name: "Dipen Doshi", avatar: image.dd, rotateBg: image.rotateBg, tags: "Value Investing, Dividend", followers: "17k followers" },
+  // { name: "Prabhat Mittal", avatar: image.pm, rotateBg: image.rotateBg, tags: "Futures & Options, Growth", followers: "16k followers" },
 ];
 
 const spinClass = "animate-[spin_6s_linear_infinite]";

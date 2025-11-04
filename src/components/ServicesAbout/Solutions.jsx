@@ -44,61 +44,79 @@ export default function Solutions() {
             transition={animationConfig.transition}
           >
             <div className="content row">
+
+              {/* Left Column */}
               <div className="container11 col-lg-6">
                 <a className="card1" href="#">
-                  <h3>Web Design &amp; Development</h3>
+                  <h3>Website Designing & Development</h3>
                   <div className="go-corner">
                     <div className="go-arrow">→</div>
                   </div>
                 </a>
+
+                <a className="card1" href="#">
+                  <h3>Customized CRM Solutions</h3>
+                  <div className="go-corner">
+                    <div className="go-arrow">→</div>
+                  </div>
+                </a>
+
                 <a className="card1" href="#">
                   <h3>Mobile App Development</h3>
                   <div className="go-corner">
                     <div className="go-arrow">→</div>
                   </div>
                 </a>
-                <a className="card1" href="#">
-                  <h3>Search Engine Optimisation</h3>
-                  <div className="go-corner">
-                    <div className="go-arrow">→</div>
-                  </div>
-                </a>
-                <a className="card1" href="#">
-                  <h3>Social Media Marketing</h3>
-                  <div className="go-corner">
-                    <div className="go-arrow">→</div>
-                  </div>
-                </a>
-              </div>
 
-              {/* Lower Cards */}
-              <div className="container11 col-lg-6">
-                <a className="card1" href="#">
-                  <h3>Digital Marketing</h3>
-                  <div className="go-corner">
-                    <div className="go-arrow">→</div>
-                  </div>
-                </a>
-                <a className="card1" href="#">
-                  <h3>Content Marketing</h3>
-                  <div className="go-corner">
-                    <div className="go-arrow">→</div>
-                  </div>
-                </a>
                 <a className="card1" href="#">
                   <h3>Graphic Design</h3>
                   <div className="go-corner">
                     <div className="go-arrow">→</div>
                   </div>
                 </a>
+              </div>
+
+              {/* Right Column */}
+              <div className="container11 col-lg-6">
+
                 <a className="card1" href="#">
-                  <h3>Email Marketing</h3>
+                  <h3>Video Editing</h3>
                   <div className="go-corner">
                     <div className="go-arrow">→</div>
                   </div>
                 </a>
+
+                <a className="card1" href="#">
+                  <h3>Social Media Marketing</h3>
+                  <div className="go-corner">
+                    <div className="go-arrow">→</div>
+                  </div>
+                </a>
+
+                <a className="card1" href="#">
+                  <h3>SEO & Digital Marketing</h3>
+                  <div className="go-corner">
+                    <div className="go-arrow">→</div>
+                  </div>
+                </a>
+
+                <a className="card1" href="#">
+                  <h3>Google My Business Listing</h3>
+                  <div className="go-corner">
+                    <div className="go-arrow">→</div>
+                  </div>
+                </a>
+
+                <a className="card1" href="#">
+                  <h3>AI Video Marketing</h3>
+                  <div className="go-corner">
+                    <div className="go-arrow">→</div>
+                  </div>
+                </a>
+
               </div>
             </div>
+
           </motion.div>
         </div>
       </div>

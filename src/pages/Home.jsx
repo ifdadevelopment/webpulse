@@ -31,7 +31,7 @@ const Home = () => {
       <WorkProcessSection/>
       <CallToAction1/>
       {/* <FinancialFreedomSection/> */}
-      <InsightsExperts/>
+      {/* <InsightsExperts/> */}
       <InsideMarket/>
       {/* <CommunityHero/>
       <StoxoPromo/> */}

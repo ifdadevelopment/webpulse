@@ -24,80 +24,108 @@ const OutstandingSection = () => {
     {
       id: "feature-tab-1",
       icon: <FaEnvelopeOpenText size={24} />,
-      title: "Email Marketing",
+      title: "Understand",
     },
     {
       id: "feature-tab-2",
       icon: <FaSatelliteDish size={24} />,
-      title: "SEO Services",
+      title: "Strategize",
     },
     {
       id: "feature-tab-3",
       icon: <FaStar size={24} />,
-      title: "Digital Marketing",
+      title: "Create",
     },
-    { id: "feature-tab-4", icon: <FaIcons size={24} />, title: "Social Media" },
+    { id: "feature-tab-4", icon: <FaIcons size={24} />, title: "Build & Automate" },
     {
       id: "feature-tab-5",
       icon: <FaLaptopCode size={24} />,
-      title: "Web Design",
+      title: "Launch & Accelerate",
     },
+    {
+      id: "feature-tab-6",
+      icon: <FaLaptopCode size={24} />,
+      title: "Measure & Optimize",
+    },
+    // {
+    //   id: "feature-tab-7",
+    //   icon: <FaLaptopCode size={24} />,
+    //   title: "Scale & Dominate",
+    // },
   ];
 
   const tabContent = [
     {
       id: "feature-tab-1",
-      heading: "Advertising through email",
-      desc: "Email advertising is a cost-effective and efficient method to reach consumers and nurture customer relationships. It allows businesses to maintain strong communication with their customers and build trust through consistent engagement.",
+      heading: "Understand",
+      desc: "We start with clarity — not assumptions",
       list: [
-        "Personalized Campaigns",
-        "Targeted Outreach",
-        "Analytics & Tracking",
+        "Business discovery & brand audit",
+        "Competitor & market research",
+        "Target audience & customer psychology",
+        "Goal & KPI alignment"
       ],
       image: images212.ser11,
       link: "digital-advertising",
     },
     {
       id: "feature-tab-2",
-      heading: "Strategies to enhance online visibility & traffic",
-      desc: "Improve your online presence through optimized site design, faster load times, and content-rich experiences. SEO plays a crucial role in driving organic traffic and building brand credibility.",
-      list: ["Site Optimization", "Page Rankings", "Keyword Strategy"],
+      heading: "Strategize",
+      desc: "A winning plan for brand visibility, engagement & revenue.",
+      list: ["Digital growth roadmap", "Funnel architecture & lead systems", "Messaging & brand positioning","Platform & content strategy"],
       image: images212.ser10,
       link: "seo",
     },
     {
       id: "feature-tab-3",
-      heading: "Developing strategies and campaigns on digital platforms",
-      desc: "Developing strategies and campaigns on digital platforms is essential for businesses to thrive in today's fast-paced world. With the proliferation of social media and online channels, a strong digital presence connects brands with customers, builds awareness, and drives sales.",
+      heading: "Create",
+      desc: " Smart designs, powerful communication, high-impact storytelling.",
       list: [
-        "Corporate Online Advertising",
-        "SEO Optimization Services",
-        "Web Analytics",
+        "Website & landing page design",
+        "Brand creatives & content systems",
+        "Video production & ad creatives",
+        "Conversion-optimized UI & UX",
       ],
       image: images212.ser13,
       link: "digital-marketing",
     },
     {
       id: "feature-tab-4",
-      heading: "Digital community channels",
-      desc: "Social media, forums, and messaging apps connect people and brands in real time, allowing personalized communication and direct feedback from customers.",
-      list: ["Social Media Ads", "Brand Engagement", "Community Management"],
+      heading: "Build & Automate",
+      desc: "Technology + AI = scalable efficiency.",
+      list: ["Website & e-commerce development", "CRM & marketing automation setup", "AI lead nurturing systems","Analytics & tracking infrastructure"],
       image: images212.ser12,
       link: "social-media",
     },
     {
       id: "feature-tab-5",
-      heading: "Developing Web Applications",
-      desc: "Designing, building, and deploying user-friendly, responsive, and secure web applications tailored to client needs and scalable for growth.",
-      list: ["UI/UX Design", "Responsive Layouts", "Web Security"],
+      heading: "Launch & Accelerate",
+      desc: "Go-to-market with speed & strategic precision.",
+      list: ["Organic + Paid campaign rollout", "SEO & content execution", "Google, Meta & LinkedIn ads","Influencer + remarketing funnels"],
       image: images212.ser14,
       link: "web-design",
     },
+    {
+      id: "feature-tab-6",
+      heading: "Measure & Optimize",
+      desc: "Continuous improvement = continuous growth.",
+      list: ["Deep analytics & performance reporting", "A/B testing for pages, creatives & ads", "Conversion rate optimization (CRO)","Budget reallocation to highest performers"],
+      image: images212.ser14,
+      link: "web-design",
+    },
+    // {
+    //   id: "feature-tab-7",
+    //   heading: "Scale & Dominate",
+    //   desc: "Repeat what works. Expand what wins.",
+    //   list: ["Omnichannel scale-up", "Brand authority & community building", "AI-driven personalization","Long-term competitive positioning"],
+    //   image: images212.ser14,
+    //   link: "web-design",
+    // },
   ];
 
   return (
     <section className="outstanding-section ptb-70 gray-light-bg overflow-hidden sm:overflow-visible">
-      <div className="max-w-6xl mx-auto px-4">
+      <div className="max-w-7xl mx-auto ">
         {/* Header */}
         <motion.div
           className="row justify-content-center"
@@ -108,7 +136,7 @@ const OutstandingSection = () => {
         >
           <div className="col-md-9 col-lg-8">
             <div className="section-heading text-center mb-1 font-publicSans">
-              <strong className="color-secondary">Our Expertise</strong>
+              <strong className="color-secondary">Webpulse Growth Engine</strong>
               <motion.h2
                 className="h2-outs mb-3"
                 initial={fadeAnimations.zoomIn.initial}
@@ -116,21 +144,17 @@ const OutstandingSection = () => {
                 transition={animationConfig.transition}
                 viewport={animationConfig.viewport}
               >
-                Outstanding Experience
+                A Proven System to Build, Scale & Dominate Digital Markets
               </motion.h2>
               <span className="animate-border mr-auto ml-auto mb-4"></span>
               <p className="lead">
-                Through years our team has achieved the highest level of
-                expertise in our field. Every single member of our team
-                possesses a wealth of knowledge and experience.
+                Growth is not luck — it’s a <strong>repeatable process.</strong>
+                Our Growth Engine combines <strong>strategy, creative intelligence, technology & AI-driven execution</strong> to generate predictable business results.
               </p>
             </div>
           </div>
         </motion.div>
-
-        {/* Tabs */}
         <div className="feature-tabs-wrap">
-          {/* Tab Scroll Navigation */}
           <div
             className="feature-tabs-scroll-wrapper"
             style={{
@@ -152,14 +176,12 @@ const OutstandingSection = () => {
               {tabs.map(({ id, icon, title }) => (
                 <li
                   key={id}
-                  className={`nav-item flex-shrink-0  text-[#6545d7]  ${
-                    activeTab === id ? "active" : ""
-                  }`}
+                  className={`nav-item flex-shrink-0  text-[#6545d7]  ${activeTab === id ? "active" : ""
+                    }`}
                 >
                   <a
-                    className={`nav-link text-center ${
-                      activeTab === id ? "active" : ""
-                    }`}
+                    className={`nav-link text-center ${activeTab === id ? "active" : ""
+                      }`}
                     href={`#${id}`}
                     onClick={(e) => handleTabClick(e, id)}
                     style={{
@@ -184,9 +206,7 @@ const OutstandingSection = () => {
               ))}
             </ul>
           </div>
-
-          {/* Tab Content */}
-          <div className="tab-content feature-tab-content tab_body mt-4 font-publicSans max-w-4xl mx-auto px-4">
+          <div className="tab-content feature-tab-content tab_body mt-4 font-publicSans max-w-5xl mx-auto px-4">
             {tabContent
               .filter((tab) => tab.id === activeTab)
               .map((tab) => (

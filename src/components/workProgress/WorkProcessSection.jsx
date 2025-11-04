@@ -3,35 +3,36 @@ import { motion } from "framer-motion";
 import "./WorkProcessSection.css";
 import { fadeAnimations, animationConfig } from "../../../animations";
 
+
 const steps = [
   {
     id: "01",
-    title: "Technical Audit",
-    desc: "A crucial component of any effective search engine optimization strategy.",
+    title: "Discover & Strategize",
+    desc: "We turn your business goals into a clear digital roadmap.",
     direction: "left",
   },
   {
     id: "02",
-    title: "Technical SEO",
-    desc: "The process of optimizing a website for search engine algorithms.",
+    title: "Build Your Digital Foundation",
+    desc: "Your brand must communicate trust, value, and clarity.",
     direction: "right",
   },
   {
     id: "03",
-    title: "Select Keywords",
-    desc: "Essential component of any successful digital marketing strategy.",
+    title: "Drive High-Quality Traffic",
+    desc: "Modern, fast, mobile-first, conversion-focused systems.",
     direction: "left",
   },
   {
     id: "04",
-    title: "Demographics",
-    desc: "Refer to the specific characteristics of a target audience.",
+    title: "Convert & Nurture",
+    desc: " Your brand reaches the right people, at the right time, with the right message.",
     direction: "right",
   },
   {
     id: "05",
-    title: "Engine Ranking",
-    desc: "Optimize website content to rank higher on search engine results.",
+    title: "Scale with Data",
+    desc: "Data-driven decisions, continuous improvement, compounding growth.",
     direction: "left",
     last: true,
   },
@@ -60,14 +61,13 @@ const WorkProcessSection = () => {
                 transition={animationConfig.transition}
                 viewport={animationConfig.viewport}
               >
-                We follow Few Steps For SEO
+                A Proven, Data-Driven System for Growth
               </motion.h2>
 
               <span className="animate-border mr-auto ml-auto mb-4"></span>
               <p className="lead">
-                As a professional in the field of Search Engine Optimization, it
-                is crucial to understand that achieving higher rankings on search
-                engine results pages (SERPs) is not a one-time task.
+                At Webpulse Digital, every campaign is powered by <strong>strategy, creativity, technology, and continuous improvement</strong>.
+                We follow a structured approach to ensure your brand doesn't just grow — it wins.
               </p>
             </div>
           </div>
@@ -98,7 +98,7 @@ const WorkProcessSection = () => {
                         </div>
                       </div>
                       <div className="col-md-7">
-                        <h5>{step.title}</h5>
+                        <h5 className="font-bold">{step.title}</h5>
                         <p>{step.desc}</p>
                       </div>
                     </div>
@@ -110,9 +110,8 @@ const WorkProcessSection = () => {
                 <div className="col-md-2 process-none"></div>
                 <div className="col-md-5 col-lg-5 process-none">
                   <div
-                    className={`process-point-right ${
-                      step.last ? "process-last" : ""
-                    }`}
+                    className={`process-point-right ${step.last ? "process-last" : ""
+                      }`}
                   ></div>
                 </div>
               </>
@@ -146,8 +145,8 @@ const WorkProcessSection = () => {
                         </div>
                       </div>
                       <div className="col-md-7">
-                        <h5>{step.title}</h5>
-                        <p className="font-medium">{step.desc}</p>
+                        <h5 className="font-bold">{step.title}</h5>
+                        <p className="font-small">{step.desc}</p>
                       </div>
                     </div>
                     <div className="process-line-r"></div>

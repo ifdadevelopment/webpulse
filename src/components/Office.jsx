@@ -36,10 +36,10 @@ const Office = () => {
 
     emailjs
       .send(
-        "YOUR_SERVICE_ID", // ✅ EmailJS Service ID
-        "YOUR_TEMPLATE_ID", // ✅ EmailJS Template ID
+        "YOUR_SERVICE_ID", 
+        "YOUR_TEMPLATE_ID", 
         formData,
-        "YOUR_PUBLIC_KEY" // ✅ EmailJS Public Key
+        "YOUR_PUBLIC_KEY" 
       )
       .then(
         () => {

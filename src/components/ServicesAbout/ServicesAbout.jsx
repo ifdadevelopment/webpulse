@@ -17,7 +17,7 @@ const ServicesAbout = () => {
             <ul className="img-list">
               <li>
                 <img
-                  src={images212.seo7}
+                  src={images212.mainsers}
                   alt="Why Digital Marketing?"
                   className="w-full"
                 />

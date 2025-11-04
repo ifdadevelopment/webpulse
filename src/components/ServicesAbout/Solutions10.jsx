@@ -4,13 +4,15 @@ import { fadeAnimations, animationConfig } from "../../../animations";
 import "./ServicesAbout.css";
 import { images212 } from "../../../data";
 
-export default function SolutionsVideoEditing() {
+export default function Solutions10() {
     const [isExpanded, setIsExpanded] = useState(false);
     const toggleContent = () => setIsExpanded(!isExpanded);
 
     return (
         <div className="overflow-hidden setcard_mainorganic font-publicSans container-fluid">
             <div className="row about_content py-2 d-flex align-items-center flex-wrap-reverse max-w-6xl mx-auto md:px-4">
+
+                {/* ✅ Content */}
                 <motion.div
                     className="col-lg-6 content_box"
                     initial={fadeAnimations.right.initial}
@@ -18,36 +20,43 @@ export default function SolutionsVideoEditing() {
                     transition={animationConfig.transition}
                 >
                     <h2 className="text-center py-4 text-xl lg:text-3xl font-bold text-danger setmobile_organic">
-                        Video Editing
+                        AI Video Marketing
                     </h2>
 
                     <p className="px-3">
-                        Video is the most powerful way to tell your story, build trust, and convert viewers into customers.
-                        Professional video editing transforms raw footage into engaging, cinematic, and emotionally-driven content
-                        that captures attention and drives results.
+                        AI Video Marketing uses artificial intelligence to create high-quality videos 
+                        faster, smarter, and at scale. From ad creatives to product reels, you can 
+                        produce engaging, human-like content without needing a full production team.
                     </p>
 
                     <p className="px-3">
-                        At Webpulse Digital, we craft videos that elevate your brand and communicate your message clearly,
-                        helping your audience connect, remember, and take action.
+                        At Webpulse Digital, we leverage AI to create magnetic video content that 
+                        engages, educates, entertains, and converts your audience into customers.
+                        AI videos = faster production, higher output, lower cost, maximum impact.
                     </p>
 
                     <ul className="px-5 list-disc space-y-2">
-                        <li>Business & corporate videos</li>
-                        <li>Social media reels & shorts</li>
-                        <li>Product & service promotion videos</li>
-                        <li>Motion graphics & logo animation</li>
-                        <li>YouTube editing & storytelling</li>
-                        <li>Explainer videos & tutorials</li>
-                        <li>After-effects & AI-powered editing</li>
+                        <li>AI-generated promotional & sales videos</li>
+                        <li>Talking avatar videos for branding</li>
+                        <li>Product showcase & explainer videos</li>
+                        <li>Reels/Shorts with AI scripts & voiceovers</li>
+                        <li>Auto video conversion from blogs/text</li>
+                        <li>AI storytelling, subtitles & animations</li>
+                        <li>Omni-platform video campaigns (IG/FB/YT/LinkedIn)</li>
                     </ul>
 
                     {isExpanded && (
                         <p className="px-3 mt-2">
-                            Our editors use professional tools like Adobe Premiere Pro, Final Cut, After Effects, and AI-powered
-                            enhancement tools to deliver cinematic scenes, smooth transitions, sound-synced editing, crisp color-grading,
-                            and high-impact storytelling. Whether it’s brand awareness, lead generation, or product marketing —
-                            we create videos designed to engage viewers and drive real conversions.
+                            We use advanced AI tools like Runway, Synthesia, HeyGen, 
+                            MidJourney, D-ID, and text-to-video engines to build 
+                            high-performance content libraries for your brand. 
+                            <br /><br />
+                            Whether you need viral short-form reels, corporate explainers, 
+                            personal branding avatar videos, or AI-generated ad content, 
+                            we create video systems that keep your brand visible — everywhere.
+                            <br /><br />
+                            The future of marketing is AI-powered — and now your business can 
+                            leverage it before your competitors do.
                         </p>
                     )}
 
@@ -59,6 +68,8 @@ export default function SolutionsVideoEditing() {
                         {isExpanded ? "Read Less" : "Read More"}
                     </button>
                 </motion.div>
+
+                {/* ✅ Image */}
                 <motion.div
                     className="col-lg-6 py-20 text-center"
                     initial={fadeAnimations.left.initial}
@@ -68,13 +79,14 @@ export default function SolutionsVideoEditing() {
                     <ul className="img-list">
                         <li>
                             <img
-                                src={images212.vdoedt}
-                                alt="Video Editing"
+                                src={images212.aimvd} 
+                                alt="AI Video Marketing"
                                 className="w-full rounded-lg shadow-lg"
                             />
                         </li>
                     </ul>
                 </motion.div>
+
             </div>
         </div>
     );

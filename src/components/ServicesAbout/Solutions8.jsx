@@ -4,11 +4,11 @@ import { fadeAnimations, animationConfig } from "../../../animations";
 import { images212 } from "../../../data";
 import "./ServicesAbout.css";
 
-const Solutions3 = () => {
+const Solutions8 = () => {
   return (
     <div className="overflow-hidden setcard_mainorganic font-publicSans container-fluid">
       <div className="row about_content pt-5 flex items-center max-w-6xl mx-auto md:px-4">
-        
+
         {/* Image Section */}
         <div className="col-lg-6 text-center">
           <motion.div
@@ -20,8 +20,8 @@ const Solutions3 = () => {
             <ul className="img-list">
               <li>
                 <img
-                  src={images212.seodigt}
-                  alt="SEO & Digital Marketing Services"
+                  src={images212.grphd} 
+                  alt="Graphic Design Services"
                   className="w-full"
                 />
               </li>
@@ -29,7 +29,7 @@ const Solutions3 = () => {
           </motion.div>
         </div>
 
-        {/* Content Section */}
+        {/* Content Box Section */}
         <div className="col-lg-6 content_box">
           <motion.div
             initial={fadeAnimations.right.initial}
@@ -37,26 +37,32 @@ const Solutions3 = () => {
             transition={animationConfig.transition}
           >
             <h2 className="text-center py-4 text-xl lg:text-3xl font-bold text-danger setmobile_organic">
-              SEO & Digital Marketing
+              Why Graphic Design?
             </h2>
 
             <p className="p-3 mt-2 text-gray-700 leading-relaxed">
-              SEO & Digital Marketing help businesses improve online visibility, attract qualified leads, 
-              and convert traffic into loyal customers.  
+              Great design isn’t just about looking good — it’s about creating
+              powerful visual experiences that communicate your brand’s story
+              and influence customer decisions.  
               <br /><br />
-              From optimizing your website for search engines to running targeted campaigns on platforms 
-              like Google and social media, a strong digital strategy ensures your brand reaches the right 
-              audience at the right time.
+              Graphic design strengthens your brand identity, builds trust, and
+              helps you stand out in a crowded digital world. From logos and brand
+              guidelines to social media creatives, banners, packaging, and
+              advertising graphics — every visual element plays a key role in how
+              your audience perceives your business.
               <br /><br />
-              Whether you're a startup or an established business, investing in SEO & Digital Marketing is 
-              essential to stay competitive, grow authority, and accelerate long-term success in the digital world.
+              Whether you're launching a brand or refreshing your look, a strong
+              design strategy ensures consistency, professionalism, and emotional
+              connection with your audience.
+              <br /><br />
+              Ready to make your brand unforgettable?  
+              Let's design visuals that attract, engage, and convert.
             </p>
           </motion.div>
         </div>
-
       </div>
     </div>
   );
 };
 
-export default Solutions3;
+export default Solutions8;

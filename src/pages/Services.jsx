@@ -12,10 +12,13 @@ import Solutions6 from "../components/ServicesAbout/Solutions6";
 import Solutions7 from "../components/ServicesAbout/Solutions7";
 import Services2Section from "../components/Services2Section/Services2Section";
 import FinancialFreedomSection from "../components/FinancialFreedomSection"
+import Solutions8 from "../components/ServicesAbout/Solutions8";
+import Solutions9 from "../components/ServicesAbout/Solutions9";
+import Solutions10 from "../components/ServicesAbout/Solutions10";
 const Services = () => {
   return (
     <>
-    <FinancialFreedomSection/>
+    {/* <FinancialFreedomSection/> */}
       <Services2Section/>
       <Services1 />
       <ServicesAbout />
@@ -27,6 +30,9 @@ const Services = () => {
       <Solutions5/>
       <Solutions6/>
       <Solutions7/>
+      <Solutions8/>
+      <Solutions9/>
+      <Solutions10/>
     </>
   );
 };

@@ -19,7 +19,7 @@ const Services = () => {
       <Services2Section/>
       <Services1 />
       <ServicesAbout />
-      <Solutions />
+      {/* <Solutions /> */}
       <Solutions1 />
       <Solutions2 />
       <Solutions3 />

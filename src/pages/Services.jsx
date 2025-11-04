@@ -19,8 +19,8 @@ const Services = () => {
       <Services2Section/>
       <Services1 />
       <ServicesAbout />
-      {/* <Solutions /> */}
-      <Solutions1 />
+      <Solutions />
+      {/* <Solutions1 /> */}
       <Solutions2 />
       <Solutions3 />
       <Solutions4 />

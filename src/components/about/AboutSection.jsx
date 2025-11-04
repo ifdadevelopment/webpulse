@@ -131,11 +131,11 @@ export default function AboutSection() {
           </div>
         </div>
       </section>
-      <div className="box1 absolute inset-0 pointer-events-none hidden md:block">
+      {/* <div className="box1 absolute inset-0 pointer-events-none hidden md:block">
         {Array.from({ length: 12 }).map((_, i) => (
           <div key={i} className="w-10 h-10 border border-gray-300 absolute animate-ping rounded-xl"></div>
         ))}
-      </div>
+      </div> */}
     </div>
   );
 }

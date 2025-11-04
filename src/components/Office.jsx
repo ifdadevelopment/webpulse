@@ -11,7 +11,7 @@ const serviceOptions = [
   "Social Media Marketing",
   "SEO & Digital Marketing",
   "Google My Business Listing",
-  "AI Video Marketing"
+  "AI Video Marketing",
 ];
 
 const Office = () => {
@@ -26,37 +26,44 @@ const Office = () => {
   });
 
   const handleChange = (e) => {
-    const { name, value } = e.target;
-    setFormData((p) => ({ ...p, [name]: value }));
+    setFormData((p) => ({
+      ...p,
+      [e.target.name]: e.target.value,
+    }));
   };
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+
+    if (!formData.service) {
+      toast.error("Please select a service!");
+      return;
+    }
+
     setLoading(true);
 
     emailjs
       .send(
-        "YOUR_SERVICE_ID", 
-        "YOUR_TEMPLATE_ID", 
+        import.meta.env.VITE_EMAILJS_SERVICE_ID,
+        import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
         formData,
-        "YOUR_PUBLIC_KEY" 
+        import.meta.env.VITE_EMAILJS_PUBLIC_KEY
       )
-      .then(
-        () => {
-          toast.success("Form submitted successfully!");
-          setFormData({
-            name: "",
-            phone: "",
-            service: "",
-            email: "",
-            message: "",
-          });
-        },
-        (error) => {
-          console.error(error);
-          toast.error("Failed to submit form");
-        }
-      )
+      .then(() => {
+        toast.success(" ✅ Form submitted successfully!");
+
+        setFormData({
+          name: "",
+          phone: "",
+          service: "",
+          email: "",
+          message: "",
+        });
+      })
+      .catch((err) => {
+        console.error("EmailJS Error:", err);
+        toast.error("❌ Failed to submit form");
+      })
       .finally(() => setLoading(false));
   };
 
@@ -64,13 +71,14 @@ const Office = () => {
     <section className="bg-[#f7f4eb] py-10 px-4 font-publicSans mt-[calc(var(--header-height,80px))]">
       <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8">
 
-        {/* Form */}
+        {/* ✅ Form */}
         <div className="bg-white p-6 rounded-2xl shadow-md">
           <h2 className="text-2xl sm:text-3xl font-bold text-[#333333] mb-6 text-center md:text-left">
             Let's connect with us
           </h2>
 
           <form className="space-y-4" onSubmit={handleSubmit}>
+            
             <input
               type="text"
               name="name"
@@ -103,9 +111,7 @@ const Office = () => {
             >
               <option value="">Select Service</option>
               {serviceOptions.map((srv, i) => (
-                <option key={i} value={srv}>
-                  {srv}
-                </option>
+                <option key={i} value={srv}>{srv}</option>
               ))}
             </select>
 
@@ -121,8 +127,8 @@ const Office = () => {
 
             <textarea
               name="message"
-              rows="4"
               required
+              rows="4"
               value={formData.message}
               onChange={handleChange}
               placeholder="Message"
@@ -133,14 +139,15 @@ const Office = () => {
               type="submit"
               disabled={loading}
               className={`bg-[#0076FF] text-white font-semibold px-6 py-3 rounded-md w-full transition-all
-              ${loading ? "opacity-70 cursor-not-allowed" : "hover:bg-blue-700"}`}
+                ${loading ? "opacity-70 cursor-not-allowed" : "hover:bg-blue-700"}
+              `}
             >
-              {loading ? "Submitting..." : "Apply Now"}
+              {loading ? "Sending..." : "Apply Now"}
             </button>
           </form>
         </div>
 
-        {/* Location Map */}
+        {/* ✅ Map */}
         <div className="w-full h-[400px] md:h-auto rounded-xl overflow-hidden shadow-md">
           <iframe
             title="Location"

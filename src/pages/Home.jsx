@@ -32,7 +32,7 @@ const Home = () => {
       <CallToAction1/>
       {/* <FinancialFreedomSection/> */}
       {/* <InsightsExperts/> */}
-      <InsideMarket/>
+      {/* <InsideMarket/> */}
       {/* <CommunityHero/>
       <StoxoPromo/> */}
       <MarketWrapSection/>

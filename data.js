@@ -137,6 +137,13 @@ const seodigt = "/assets/seodigt.png"
 const gmyb = "/assets/gmyb.png"
 const aimvd = "/assets/aimvd.png"
 const mainsers = "/assets/mainsers.png"
+const understand = "/assets/understand.png"
+const strategize = "/assets/strategize.png"
+const create = "/assets/create.png"
+const buildautomate = "/assets/buildautomate.png"
+const launchaccelerate = "/assets/launchaccelerate.png"
+const measureoptimize = "/assets/measureoptimize.png"
+const servicesBanner  = "/assets/servicesBanner.png"
 export const image = {bffLogo,ramandeep,manoj,sajid,renuka,kundan,aditya,footerpng,mail,think,resource,deter, ipad,location,stockgroWhite,discord,twitter,insta,ldin,fb,he,iifl,sm,niacl,stock,wels,vik,lodha,jbb,brigade,aig,bajaj,logoteam,fanFav1,mascotSrc,imgSrc,handSrc,fanFav3,fanFav4,Ed1,Ed2,Ed3,Ed4,Ed5,Ed6,bannerImg,money,ht,financial,livemint,toi,rotateBg,tick,rightImage,logo11,linesBg,ps,vj,dp,ag,fc,vk,dd,pm, ss2,Logo, Bg, stockPng, tips, stocktips,heroBg,appleIcon,desktopwhite,googlePlayWhite,stoxoInputImg,mobileBg,coloredLine,ff1Card1,ff1Card2,ff1Card3,flywheel1,flywheel2,flywheel3,ff2Card,ff3Card1,ff3Card2 };
 export const images212 ={
  socialmedia,
@@ -156,6 +163,8 @@ export const images212 ={
   t6Img1,
   about1,
   mike1,
+  servicesBanner,
+  understand,strategize,create,buildautomate,launchaccelerate,measureoptimize,
   prof1,
   ser11,ser10,ser12,ser13,ser14,
   whychoose,aboutus,ems1,gds1,seosr,sds1,dms12,cmsts,sms12,mads,smm2,gbls,aimar,seodm,mainsers,aimvd,gmyb,seodigt,smmsdia,vdoedt,grphd,mapd,ccrm,wbsds

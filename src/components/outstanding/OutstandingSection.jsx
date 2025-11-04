@@ -73,7 +73,7 @@ const OutstandingSection = () => {
         "Target audience & customer psychology",
         "Goal & KPI alignment"
       ],
-      image: images212.ser11,
+      image: images212.understand,
       link: "digital-advertising",
     },
     {
@@ -81,7 +81,7 @@ const OutstandingSection = () => {
       heading: "Strategize",
       desc: "A winning plan for brand visibility, engagement & revenue.",
       list: ["Digital growth roadmap", "Funnel architecture & lead systems", "Messaging & brand positioning", "Platform & content strategy"],
-      image: images212.ser10,
+      image: images212.strategize,
       link: "seo",
     },
     {
@@ -94,7 +94,7 @@ const OutstandingSection = () => {
         "Video production & ad creatives",
         "Conversion-optimized UI & UX",
       ],
-      image: images212.ser13,
+      image: images212.create,
       link: "digital-marketing",
     },
     {
@@ -102,7 +102,7 @@ const OutstandingSection = () => {
       heading: "Build & Automate",
       desc: "Technology + AI = scalable efficiency.",
       list: ["Website & e-commerce development", "CRM & marketing automation setup", "AI lead nurturing systems", "Analytics & tracking infrastructure"],
-      image: images212.ser12,
+      image: images212.buildautomate,
       link: "social-media",
     },
     {
@@ -110,7 +110,7 @@ const OutstandingSection = () => {
       heading: "Launch & Accelerate",
       desc: "Go-to-market with speed & strategic precision.",
       list: ["Organic + Paid campaign rollout", "SEO & content execution", "Google, Meta & LinkedIn ads", "Influencer + remarketing funnels"],
-      image: images212.ser14,
+      image: images212.launchaccelerate,
       link: "web-design",
     },
     {
@@ -118,7 +118,7 @@ const OutstandingSection = () => {
       heading: "Measure & Optimize",
       desc: "Continuous improvement = continuous growth.",
       list: ["Deep analytics & performance reporting", "A/B testing for pages, creatives & ads", "Conversion rate optimization (CRO)", "Budget reallocation to highest performers"],
-      image: images212.ser14,
+      image: images212.measureoptimize,
       link: "web-design",
     },
     // {

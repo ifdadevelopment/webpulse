@@ -15,9 +15,11 @@ import FinancialFreedomSection from "../components/FinancialFreedomSection"
 import Solutions8 from "../components/ServicesAbout/Solutions8";
 import Solutions9 from "../components/ServicesAbout/Solutions9";
 import Solutions10 from "../components/ServicesAbout/Solutions10";
+import BannerAll from "../components/BannerAll";
 const Services = () => {
   return (
     <>
+    <BannerAll/>
     {/* <FinancialFreedomSection/> */}
       <Services2Section/>
       <Services1 />

@@ -42,8 +42,8 @@ export default function HeroSection({
         <div className="max-w-6xl font-publicSans flex flex-col w-full md:h-auto h-full  lg:px-8 mx-auto">
           <section className="text-white">
             <h1 className="sm:text-[25px] md:text-[40px] lg:text-[55px] flex text-[28px] lg:leading-[72px] leading-[34px] md:leading-[60px] font-bold text-white flex-col">
-              <span className="flex items-center">Best Digital</span>
-              <span>Marketing Company</span>
+              <span className="flex items-center">Leading </span>
+              <span>Digital Marketing Company </span>
               <span className="max-w-52 sm:text-[25px] md:text-[40px] lg:text-[55px] mt-[16px] text-[14px] lg:leading-[40px] leading-[18px] md:leading-[32px] font-medium flex items-center lg:max-w-[720px]">
                 in Delhi NCR
               </span>
@@ -51,14 +51,14 @@ export default function HeroSection({
 
             <div className="mt-6 text-[14px] sm:text-[16px] md:text-[18px] leading-relaxed text-gray-200 space-y-3">
               <p className="font-semibold text-white">
-                Empower Your Brand with <span className="text-white font-bold">Digital Expertise</span>
+                Empower your brand with smart strategy and  <span className="text-white font-bold">creative excellence.</span>
               </p>
               <p>
-                Partner with <strong>Webpulse Digital</strong> – Your Trusted Digital Marketing Experts
+                Partner with  <strong>Webpulse Digital — </strong>trusted experts in SEO, Social Media, Web Design & more.
               </p>
               <p>
-                Unlock Growth with Tailored Strategies in <strong>SEO</strong>,{" "}
-                <strong>Social Media</strong>, <strong>Web Design</strong> &amp; more!
+                Unlock measurable growth with <strong>tailor-made </strong>,{" "}
+                <strong>digital solutions</strong>, <strong>designed for your business.</strong>
               </p>
             </div>
           </section>

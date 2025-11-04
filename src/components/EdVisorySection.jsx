@@ -2,13 +2,14 @@ import React from "react";
 import { image } from "../../data";
 import { motion } from "framer-motion";
 import {
-  Search,
-  Share2,
-  PenTool,
-  Code,
-  Megaphone,
+  GraduationCap,
+  Building2,
+  Dumbbell,
+  Briefcase,
+  Rocket,
   Smartphone
 } from "lucide-react";
+
 
 const BADGES = [
   { label: "500+ Clients", color: "#ff603c" },
@@ -18,47 +19,47 @@ const BADGES = [
 
 const PORTFOLIO = [
   {
-    title: "SEO Campaign",
-    alt: "SEO Campaign",
+    title: "Education & Coaching",
+    alt: "Education Digital Growth",
     src: image.port1,
-    icon: <Search className="w-8 h-8 text-blue-500" />,
-    desc: "Improving search rankings and organic visibility through data-driven SEO strategies."
+    icon: <GraduationCap className="w-8 h-8 text-[#804494]" />,
+    desc: "Attract students, nurture leads & scale admissions with automation + brand positioning."
   },
   {
-    title: "Social Media Strategy",
-    alt: "Social Media Strategy",
+    title: "Real Estate",
+    alt: "Real Estate Campaigns",
     src: image.port2,
-    icon: <Share2 className="w-8 h-8 text-pink-500" />,
-    desc: "Creative content and engagement plans tailored for Instagram, Facebook, and LinkedIn."
+    icon: <Building2 className="w-8 h-8 text-[#804494]" />,
+    desc: "High-intent property leads, site visits & remarketing funnels built for real-estate cycles."
   },
   {
-    title: "Branding Design",
-    alt: "Branding Design",
+    title: "Wellness & Fitness",
+    alt: "Fitness Branding",
     src: image.port3,
-    icon: <PenTool className="w-8 h-8 text-yellow-500" />,
-    desc: "Logo, typography, and brand guidelines that define your business identity."
+    icon: <Dumbbell className="w-8 h-8 text-[#804494]" />,
+    desc: "Acquire fitness clients, boost membership signups & strengthen personal brand authority."
   },
   {
-    title: "Web Development",
-    alt: "Web Development",
+    title: "Corporate & SMB",
+    alt: "Corporate Marketing",
     src: image.port4,
-    icon: <Code className="w-8 h-8 text-green-500" />,
-    desc: "Responsive, SEO-optimized websites crafted with modern UI/UX design."
+    icon: <Briefcase className="w-8 h-8 text-[#804494]" />,
+    desc: "Performance marketing, CRM automation & conversion systems for enterprise growth."
   },
   {
-    title: "Google Ads Project",
-    alt: "Google Ads Project",
+    title: "Startups & Founders",
+    alt: "Startup Growth",
     src: image.port5,
-    icon: <Megaphone className="w-8 h-8 text-red-500" />,
-    desc: "Highly targeted ad campaigns for maximum ROI across Google’s ad network."
+    icon: <Rocket className="w-8 h-8 text-[#804494]" />,
+    desc: "Branding, launch funnels, investor decks & GTM strategy to scale vision-driven startups."
   },
   {
-    title: "App Marketing",
-    alt: "App Marketing",
+    title: "Mobile & Tech",
+    alt: "Tech & App Growth",
     src: image.port6,
-    icon: <Smartphone className="w-8 h-8 text-purple-500" />,
-    desc: "Boosting app installs and user retention through strategic promotion."
-  },
+    icon: <Smartphone className="w-8 h-8 text-[#804494]" />,
+    desc: "App installs, user retention funnels, automation & community building systems."
+  }
 ];
 
 
@@ -71,39 +72,32 @@ export default function DigitalMarketingPortfolio() {
           "linear-gradient(200deg, #1f2127 -5.65%, #34247d 45.63%, #804494 97.6%)",
       }}
     >
-      {/* Glowing gradient overlays */}
+      {/* Glow overlays */}
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_20%_30%,rgba(255,255,255,0.08),transparent_70%)]" />
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_80%_70%,rgba(150,100,255,0.15),transparent_70%)]" />
 
-      <div className="relative z-10 max-w-[1200px] mx-auto flex flex-col lg:flex-row items-center gap-16">
-        {/* Left content */}
-        <div className="flex-1 text-center lg:text-left">
+      <div className="relative z-10 max-w-[1300px] mx-auto flex flex-col lg:flex-row items-start lg:items-center gap-16">
+
+        {/* ✅ Left section fixed width */}
+        <div className="flex-1 max-w-[520px]">
           <motion.h2
             initial={{ opacity: 0, y: -30 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
-            className="font-figtree font-bold text-4xl lg:text-5xl leading-tight mb-4  line-height-2
-              text-light"
+            className="font-figtree font-bold text-4xl lg:text-5xl leading-tight mb-5"
           >
-            Why Choose <br></br> Web Pulse Digital
+            Industries We Serve
           </motion.h2>
 
           <motion.p
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.2 }}
-            className="text-gray-300 text-base lg:text-lg leading-relaxed max-w-[600px] mx-auto lg:mx-0"
+            className="text-gray-300 text-base lg:text-lg leading-relaxed"
           >
-            We help businesses grow through innovative digital strategies — from{" "}
-            <span className="text-white font-bold">SEO</span> to{" "}
-            <span className="text-white font-bold">social media</span>, and
-            from{" "}
-            <span className="text-white font-bold">web design</span> to{" "}
-            <span className="text-white font-bold">paid ads</span>. Your
-            success is our digital mission.
+            Specialized growth strategies tailored to your industry’s psychology, sales cycle & customer journey.
           </motion.p>
 
-          {/* Badges / Stats */}
           <div className="flex flex-wrap justify-center lg:justify-start gap-4 mt-10">
             {BADGES.map((badge, i) => (
               <motion.div
@@ -111,8 +105,8 @@ export default function DigitalMarketingPortfolio() {
                 initial={{ opacity: 0, scale: 0.8 }}
                 whileInView={{ opacity: 1, scale: 1 }}
                 transition={{ delay: i * 0.2, duration: 0.4 }}
-                whileHover={{ scale: 1.08, rotate: 1 }}
-                className={`px-6 py-3 rounded-full bg-[#804494] text-sm lg:text-base font-semibold text-white shadow-lg hover:shadow-[0_0_25px_rgba(255,255,255,0.4)]`}
+                whileHover={{ scale: 1.08 }}
+                className="px-6 py-3 rounded-full bg-[#804494] text-sm lg:text-base font-semibold text-white shadow-lg"
               >
                 {badge.label}
               </motion.div>
@@ -120,23 +114,21 @@ export default function DigitalMarketingPortfolio() {
           </div>
         </div>
 
-        {/* Portfolio grid */}
-        <div className="flex-1 grid grid-cols-2 sm:grid-cols-3 gap-4 lg:gap-6">
+        {/* ✅ Card Grid — same height & clean alignment */}
+        <div className="flex-1 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 lg:gap-6 w-full">
           {PORTFOLIO.map((item, i) => (
             <div
               key={i}
-              className="bg-white p-6 rounded-2xl shadow-md hover:shadow-xl hover:-translate-y-1 transition-all duration-300 text-center"
+              className="bg-white rounded-2xl p-6 shadow-md hover:shadow-xl hover:-translate-y-1 transition-all duration-300 text-center flex flex-col"
             >
-              <div className="flex justify-center mb-4">{item.icon}</div>
-              <h4 className="text-lg text-gray-600 font-semibold mb-2">{item.title}</h4>
-              <p className="text-gray-600 text-sm mb-4">{item.desc}</p>
+              <div className="flex justify-center mb-3">{item.icon}</div>
+              <h4 className="text-lg text-gray-800 font-semibold mb-2">{item.title}</h4>
+              <p className="text-gray-600 text-sm flex-grow">{item.desc}</p>
             </div>
           ))}
-
         </div>
+
       </div>
-
-
     </section>
   );
 }

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Services1 from "../components/Services1";
 import PackagesSection from "../components/PackagesSection";
 import ServicesAbout from "../components/ServicesAbout/ServicesAbout";
@@ -16,7 +16,22 @@ import Solutions8 from "../components/ServicesAbout/Solutions8";
 import Solutions9 from "../components/ServicesAbout/Solutions9";
 import Solutions10 from "../components/ServicesAbout/Solutions10";
 import BannerAll from "../components/BannerAll";
+import { useLocation } from "react-router-dom";
 const Services = () => {
+    const { hash } = useLocation();
+
+  useEffect(() => {
+    if (hash) {
+      const el = document.querySelector(hash);
+      if (el) {
+        setTimeout(() => {
+          el.scrollIntoView({ behavior: "smooth", block: "start" });
+        }, 200); 
+      }
+    } else {
+      window.scrollTo({ top: 0 });
+    }
+  }, [hash]);
   return (
     <>
     <BannerAll/>

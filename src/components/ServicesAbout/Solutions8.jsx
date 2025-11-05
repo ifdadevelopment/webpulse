@@ -1,12 +1,15 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { motion } from "framer-motion";
 import { fadeAnimations, animationConfig } from "../../../animations";
 import { images212 } from "../../../data";
 import "./ServicesAbout.css";
 
 const Solutions8 = () => {
+    useEffect(() => {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    }, []);
   return (
-    <div className="overflow-hidden setcard_mainorganic font-publicSans container-fluid">
+    <div className="overflow-hidden setcard_mainorganic font-publicSans container-fluid" id="graphic-design">
       <div className="row about_content pt-5 flex items-center max-w-6xl mx-auto md:px-4">
 
         {/* Image Section */}

@@ -1,9 +1,12 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { motion } from "framer-motion";
 import { fadeAnimations, animationConfig } from "../../../animations"; 
 import "./ServicesAbout.css"; 
 
 export default function Solutions1() {
+    useEffect(() => {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    }, []);
   return (
     <div className="overflow-hidden setcard_mainorganic font-publicSans container-fluid">
       <div className="row about_content py-2 d-flex  md:gap-10 gap-4  align-items-center flex-wrap-reverse max-w-6xl mx-auto md:px-4">

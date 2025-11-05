@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import { fadeAnimations, animationConfig } from "../../../animations"; 
 import "./ServicesAbout.css"; 
@@ -10,9 +10,11 @@ export default function Solutions2() {
   const toggleContent = () => {
     setIsExpanded(!isExpanded);
   };
-
+  useEffect(() => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  }, []);
   return (
-    <div className="overflow-hidden setcard_mainorganic font-publicSans container-fluid">
+    <div className="overflow-hidden setcard_mainorganic font-publicSans container-fluid" id="mobile-app-development">
       <div className="row about_content py-2 d-flex align-items-center flex-wrap-reverse max-w-6xl mx-auto md:px-4">
         <motion.div
           className="col-lg-6 content_box aos-init aos-animate"

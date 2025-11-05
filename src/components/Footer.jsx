@@ -10,17 +10,17 @@ import {
 } from "react-icons/fa6";
 
 export default function Footer() {
-  const services = [
-    { name: "Website Designing & Development", link: "/services/website-design" },
-    { name: "Customized CRM Solutions", link: "/services/crm-solutions" },
-    { name: "Mobile App Development", link: "/services/mobile-app" },
-    { name: "Graphic Design", link: "/services/graphic-design" },
-    { name: "Video Editing", link: "/services/video-editing" },
-    { name: "Social Media Marketing", link: "/services/social-media" },
-    { name: "SEO & Digital Marketing", link: "/services/seo" },
-    { name: "Google My Business Listing", link: "/services/google-my-business" },
-    { name: "AI Video Marketing", link: "/services/ai-video-marketing" },
-  ];
+ const services = [
+  { name: "Website Designing & Development", link: "/services#website-design-development" },
+  { name: "Customized CRM Solutions", link: "/services#crm-solutions" },
+  { name: "Mobile App Development", link: "/services#mobile-app-development" },
+  { name: "Graphic Design", link: "/services#graphic-design" },
+  { name: "Video Editing", link: "/services#video-editing" },
+  { name: "Social Media Marketing", link: "/services#social-media-marketing" },
+  { name: "SEO & Digital Marketing", link: "/services#seo-digital-marketing" },
+  { name: "Google My Business Listing", link: "/services#google-my-business" },
+  { name: "AI Video Marketing", link: "/services#ai-video-marketing" },
+];
 
   const quickLinks = [
     { name: "About Us", link: "/aboutus" },

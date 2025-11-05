@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import { fadeAnimations, animationConfig } from "../../../animations";
 import { images212 } from "../../../data";
@@ -8,9 +8,11 @@ const Solutions7 = () => {
   const [isExpanded, setIsExpanded] = useState(false);
 
   const toggleContent = () => setIsExpanded(!isExpanded);
-
+  useEffect(() => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  }, []);
   return (
-    <div className="overflow-hidden setcard_mainorganic font-publicSans container-fluid">
+    <div className="overflow-hidden setcard_mainorganic font-publicSans container-fluid" id="website-design-development">
       <div className="row about_content pt-5 flex items-center max-w-6xl mx-auto md:px-4">
 
         {/* Left Image Section */}

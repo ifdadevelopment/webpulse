@@ -1,38 +1,26 @@
 // MediaPress.jsx
 import React from "react";
-import { image } from "../../data";
+import { images12 } from "../../data";
 
 const LOGOS = [
-  {
-    alt: "Moneycontrol",
-    href:
-      "https://www.moneycontrol.com/news/trends/bengaluru-company-is-looking-for-chief-meme-officer-salary-is-rs-1-lakh-a-month-10286971.html",
-    src: image.money,
-  },
-  {
-    alt: "Hindustan Times",
-    href:
-      "https://www.hindustantimes.com/business/stockgro-named-in-2023-cb-insights-fintech-100-list-101697025929891.html",
-    src: image.ht,
-  },
-  {
-    alt: "Financial Express",
-    href:
-      "https://www.financialexpress.com/business/brandwagon-stockgro-ropes-in-finance-influencers-for-its-video-campaign-2504388/",
-    src: image.financial,
-  },
-  {
-    alt: "LiveMint",
-    href:
-      "https://www.livemint.com/brand-stories/no-more-stock-market-jitters-here-s-how-the-next-gen-is-mastering-the-stock-market-without-risking-a-dime-11699537858558.html",
-    src: image.livemint,
-  },
-  {
-    alt: "Times of India",
-    href:
-      "https://timesofindia.indiatimes.com/business/india-business/innovation-unveils-forbes-selection-of-the-next-global-leaders-in-the-making/articleshow/105441714.cms?from=mdr",
-    src: image.toi,
-  },
+  { alt: "Volza", href: "#", src: images12.volza },
+  { alt: "Videocon", href: "#", src: images12.videocon },
+  { alt: "SBI Card", href: "#", src: images12.sbicard },
+  { alt: "Orient Electric", href: "#", src: images12.orient },
+  { alt: "Muthoot Finance", href: "#", src: images12.muthootfinance },
+  { alt: "Maruti Suzuki", href: "#", src: images12.marutisuzuki },
+  { alt: "Mahindra Tech", href: "#", src: images12.mahindratech },
+  { alt: "Kotak Mahindra Bank", href: "#", src: images12.kotakmahindra },
+  { alt: "Hero MotoCorp", href: "#", src: images12.heromotorcops },
+  { alt: "Fevicol", href: "#", src: images12.fevicol },
+  { alt: "DTDC", href: "#", src: images12.dtdc },
+  { alt: "BluEnt", href: "#", src: images12.bluent },
+  { alt: "Birlasoft", href: "#", src: images12.birlasoft },
+  { alt: "Bajaj Finserv", href: "#", src: images12.bajajfinserv },
+  { alt: "Axis Bank", href: "#", src: images12.axisbank },
+  { alt: "Asian Paints", href: "#", src: images12.asianpaints },
+  { alt: "Altitude Software", href: "#", src: images12.altitudesoftware },
+  { alt: "Admitad", href: "#", src: images12.admitad },
 ];
 
 export default function MediaPress() {

@@ -57,7 +57,7 @@ export default function MediaPress() {
                   alt={item.alt}
                   loading="lazy"
                   decoding="async"
-                  className="object-contain w-auto lg:h-[30px] h-[20px] lg:mr-[40px] mr-[20px]"
+                  className="object-contain w-auto lg:h-[55px] h-[20px] lg:mr-[40px] mr-[20px]"
                   src={item.src}
                 />
               </a>

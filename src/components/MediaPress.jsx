@@ -27,7 +27,7 @@ export default function MediaPress() {
   const marquee = [...LOGOS, ...LOGOS, ...LOGOS];
 
   return (
-    <section className="lg:py-[96px] py-[34px] bg-[#ffece1] font-publicSans">
+    <section className="lg:py-[50px] py-[34px] bg-[#ffece1] font-publicSans">
       <div className="relative flex items-center justify-center h-[2px] bg-[#D1C5EC] lg:mx-[50px] mx-[8px]">
         <div className="bg-leftBlurGradWhite h-full absolute left-0 w-1/4 pointer-events-none" />
         <div className="bg-rightBlurGradWhite h-full absolute right-0 w-1/4 pointer-events-none" />
@@ -39,7 +39,7 @@ export default function MediaPress() {
         <div className="bg-leftBlurGradWhite h-full z-[2] absolute left-0 w-1/6 pointer-events-none" />
         <div className="bg-rightBlurGradWhite h-full z-[2] absolute right-0 w-1/6 pointer-events-none" />
 
-        <div className="overflow-hidden mt-[32px] lg:mt-[80px]">
+        <div className="overflow-hidden mt-[32px] lg:mt-[30px]">
           <div className="flex items-center whitespace-nowrap will-change-transform animate-press-marquee
                        [animation-duration:28s] [animation-timing-function:linear] [animation-iteration-count:infinite]
                        group-hover:[animation-play-state:paused]">
@@ -57,7 +57,7 @@ export default function MediaPress() {
                   alt={item.alt}
                   loading="lazy"
                   decoding="async"
-                  className="object-contain w-auto lg:h-[40px] h-[20px] lg:mr-[40px] mr-[20px]"
+                  className="object-contain w-auto lg:h-[30px] h-[20px] lg:mr-[40px] mr-[20px]"
                   src={item.src}
                 />
               </a>

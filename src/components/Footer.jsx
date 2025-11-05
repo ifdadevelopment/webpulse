@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import {image} from "../../data"
+import { image } from "../../data";
 import {
   FaFacebookF,
   FaLinkedinIn,
@@ -8,61 +8,25 @@ import {
   FaXTwitter,
   FaYoutube,
 } from "react-icons/fa6";
+
 export default function Footer() {
-  const sections = [
-    {
-      title: "Website & App Solutions",
-      links: [
-        "Website Designing",
-        "Website Development",
-        "WordPress Website Design",
-        "E-commerce Website Development",
-        "Mobile App Development",
-        "Landing Page Designing",
-        "Responsive Web Designing",
-      ],
-    },
-    {
-      title: "Customized & AI-Powered Solutions",
-      links: ["Customized CRM Solutions", "AI Video Marketing"],
-    },
-    {
-      title: "Creative & Visual Services",
-      links: ["Graphic Design", "Video Editing"],
-    },
-    {
-      title: "Digital Marketing Services",
-      links: [
-        "SEO (Search Engine Optimization)",
-        "Google My Business (Local Listing)",
-        "Social Media Marketing",
-        "Pay-Per-Click (PPC) Advertising",
-        "Google Ads (AdWords) Management",
-        "Google AdSense Services",
-        "Lead Generation Campaigns",
-        "Email Marketing",
-        "WhatsApp & SMS Marketing",
-        "Voice Marketing",
-        "Content & Blogging Strategy",
-        "YouTube Marketing",
-        "Facebook Marketing",
-        "Instagram Marketing",
-        "LinkedIn Marketing",
-        "Mobile App Marketing",
-        "Affiliate Marketing",
-        "Political Campaign Marketing",
-        "Google Analytics Setup & Reporting",
-      ],
-    },
+  const services = [
+    { name: "Website Designing & Development", link: "/services/website-design" },
+    { name: "Customized CRM Solutions", link: "/services/crm-solutions" },
+    { name: "Mobile App Development", link: "/services/mobile-app" },
+    { name: "Graphic Design", link: "/services/graphic-design" },
+    { name: "Video Editing", link: "/services/video-editing" },
+    { name: "Social Media Marketing", link: "/services/social-media" },
+    { name: "SEO & Digital Marketing", link: "/services/seo" },
+    { name: "Google My Business Listing", link: "/services/google-my-business" },
+    { name: "AI Video Marketing", link: "/services/ai-video-marketing" },
   ];
 
-  const industries = [
-    "Small Businesses",
-    "Educational Institutions",
-    "Real Estate Firms",
-    "E-commerce Brands",
-    "Startups & Entrepreneurs",
-    "Service-Based Businesses",
+  const quickLinks = [
+    { name: "About Us", link: "/aboutus" },
+    { name: "Services", link: "/services" },
+    { name: "Blog", link: "/blog" },
+    { name: "Contact Us", link: "/contactus" },
   ];
 
   const socials = [
@@ -74,10 +38,10 @@ export default function Footer() {
   ];
 
   return (
-    <footer className="bg-gradient-to-br from-[#6545d7] to-[#6444d5] text-white font-publicSans">
-      {/* Top Section */}
-      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-16 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
-        {/* Company Info */}
+    <footer className="bg-home-page-gradient text-white font-publicSans">
+      <div className="max-w-6xl mx-auto px-4 items-start sm:px-6 lg:px-8 py-16 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
+        
+        {/* Logo + Contact */}
         <div>
           <Link to="/" className="block">
             <img
@@ -86,128 +50,97 @@ export default function Footer() {
               className="w-[190px] mb-5"
             />
           </Link>
+          
           <p className="text-sm opacity-90 leading-6 mb-4">
             <strong>Webpulse Digital</strong> — Your Partner in Growth,
             Innovation & Digital Success.
           </p>
+
           <p className="text-sm opacity-80 mb-2">
-           H-18/B, 2nd Floor, Kalkaji Main Road,<br />
-             New Delhi-110019
+            H-18/B, 2nd Floor, Kalkaji Main Road,<br />
+            New Delhi-110019
           </p>
-          <a
-            href="mailto:info@webpulsedigital.com"
-            className="text-sm hover:text-blue-400"
-          >
+
+          <a href="mailto:info@webpulsedigital.com" className="text-sm mb-2 hover:text-[#34247d]">
             info@webpulsedigital.com
           </a>
-          <div className="flex mt-5 gap-3">
+        
+        </div>
+
+        {/* Services */}
+        <div>
+          <h3 className="text-lg font-semibold mb-3 text-white">Services</h3>
+          <ul className="space-y-2 text-sm opacity-80">
+            {services.map((s, i) => (
+              <li key={i}>
+                <Link to={s.link} className="hover:text-[#34247d] transition">
+                  {s.name}
+                </Link>
+              </li>
+            ))}
+          </ul>
+        </div>
+
+        {/* Quick Links */}
+        <div>
+          <h3 className="text-lg font-semibold mb-3 text-white">Quick Links</h3>
+          <ul className="space-y-2 text-sm opacity-80">
+            {quickLinks.map((q, i) => (
+              <li key={i}>
+                <Link to={q.link} className="hover:text-[#34247d] transition">
+                  {q.name}
+                </Link>
+              </li>
+            ))}
+          </ul>
+        </div>
+
+        {/* Social Links */}
+        <div>
+          <h3 className="text-lg font-semibold mb-3 text-white">Social Links</h3>
+          <div className="flex  mt-5 gap-3">
             {socials.map((s, i) => (
               <a
                 key={i}
                 href={s.href}
                 target="_blank"
-                rel="noreferrer"
-                className="h-9 w-9 flex items-center justify-center rounded-full bg-white/10 hover:bg-blue-500/70 transition"
+                rel="noopener noreferrer"
+                className="h-9 w-9 flex items-center justify-center rounded-full bg-white/10 hover:bg-[#34247d] transition"
               >
                 {s.icon}
               </a>
             ))}
           </div>
         </div>
-
-        {/* Website & App Solutions */}
-        <div>
-          <h3 className="text-lg font-semibold mb-3 text-white">
-            Website & App Solutions
-          </h3>
-          <ul className="space-y-2 text-sm opacity-80">
-            {sections[0].links.map((item, i) => (
-              <li key={i} className="hover:text-blue-400 cursor-pointer">
-                {item}
-              </li>
-            ))}
-          </ul>
-        </div>
-
-        {/* Creative & AI Solutions */}
-        <div>
-          <h3 className="text-lg font-semibold mb-3 text-white">
-            Creative & AI Solutions
-          </h3>
-          <ul className="space-y-2 text-sm opacity-80">
-            {sections[1].links.concat(sections[2].links).map((item, i) => (
-              <li key={i} className="hover:text-blue-400 cursor-pointer">
-                {item}
-              </li>
-            ))}
-          </ul>
-        </div>
-
-        {/* Industries */}
-        <div>
-          <h3 className="text-lg font-semibold mb-3 text-white">Industries We Serve</h3>
-          <ul className="space-y-2 text-sm opacity-80">
-            {industries.map((item, i) => (
-              <li key={i} className="hover:text-blue-400 cursor-pointer">
-                {item}
-              </li>
-            ))}
-          </ul>
-        </div>
       </div>
 
-      {/* Digital Marketing Section */}
-      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 mb-8 ">
-        <h3 className="text-xl font-semibold mb-4 text-center lg:text-left text-white">
-          Digital Marketing Services
-        </h3>
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-3 text-sm opacity-80">
-          {sections[3].links.map((service, i) => (
-            <span key={i} className="hover:text-blue-400 cursor-pointer">
-              {service}
-            </span>
+      {/* Alphabet Bar */}
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 mt-5 mb-5">
+        <div className="flex flex-wrap justify-center lg:justify-start text-sm font-semibold mx-1 text-gray-200 opacity-90">
+          {Array.from({ length: 26 }, (_, i) => String.fromCharCode(65 + i)).map((letter, i) => (
+            <Link
+              key={i}
+              to={`/services/${letter}`}
+              className="hover:text-[#34247d] cursor-pointer transition-colors duration-200 mx-4"
+            >
+              {letter}
+            </Link>
           ))}
         </div>
       </div>
 
-      {/* Digital Marketing Section */}
-      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 mt-5 mb-5">
-        <h3 className="text-xl font-semibold mb-4 text-center lg:text-left">
-          We Are Provide All Digital Marketing Services
-        </h3>
-
-        <div className="flex flex-wrap justify-center lg:justify-start text-sm font-semibold mx-1 text-gray-200 opacity-90">
-          {Array.from({ length: 26 }, (_, i) => String.fromCharCode(65 + i)).map(
-            (letter, i) => (
-              <span
-                key={i}
-                className="hover:text-blue-400 cursor-pointer transition-colors duration-200 mx-4"
-              >
-                {letter}
-              </span>
-            )
-          )}
-        </div>
-      </div>
-
-
-
       {/* Footer Bottom */}
       <div className="border-t border-white/10 py-6 px-6 md:px-12">
-        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col lg:flex-row justify-between items-center gap-4 text-sm opacity-80">
+        <div className="max-w-6xl mx-auto flex flex-col lg:flex-row justify-between items-center gap-4 text-sm opacity-80">
           <p>
-            © {new Date().getFullYear()}{" "}
-            <strong>Webpulse Digital</strong> — All Rights Reserved.
+            © {new Date().getFullYear()} <strong>Webpulse Digital</strong> — All Rights Reserved.
           </p>
           <div className="flex gap-3">
-            <Link
-              to="/terms-conditions"
-              className="hover:text-blue-400 transition"
-            >
+            <Link to="/terms-conditions" className="hover:text-[#34247d] transition">
               Terms & Conditions
             </Link>
             <span>•</span>
-            <Link to="/privacy-policy" className="hover:text-blue-400 transition">
+            <Link to="/privacy-policy" className="hover:text-[#34247d] transition">
               Privacy Policy
             </Link>
           </div>

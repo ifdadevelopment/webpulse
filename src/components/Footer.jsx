@@ -95,10 +95,10 @@ export default function Footer() {
              New Delhi-110019
           </p>
           <a
-            href="mailto:info@ifda.in"
+            href="mailto:info@webpulsedigital.com"
             className="text-sm hover:text-blue-400"
           >
-            info@ifda.in
+            info@webpulsedigital.com
           </a>
           <div className="flex mt-5 gap-3">
             {socials.map((s, i) => (
@@ -117,7 +117,7 @@ export default function Footer() {
 
         {/* Website & App Solutions */}
         <div>
-          <h3 className="text-lg font-semibold mb-3">
+          <h3 className="text-lg font-semibold mb-3 text-white">
             Website & App Solutions
           </h3>
           <ul className="space-y-2 text-sm opacity-80">
@@ -131,7 +131,7 @@ export default function Footer() {
 
         {/* Creative & AI Solutions */}
         <div>
-          <h3 className="text-lg font-semibold mb-3">
+          <h3 className="text-lg font-semibold mb-3 text-white">
             Creative & AI Solutions
           </h3>
           <ul className="space-y-2 text-sm opacity-80">
@@ -145,7 +145,7 @@ export default function Footer() {
 
         {/* Industries */}
         <div>
-          <h3 className="text-lg font-semibold mb-3">Industries We Serve</h3>
+          <h3 className="text-lg font-semibold mb-3 text-white">Industries We Serve</h3>
           <ul className="space-y-2 text-sm opacity-80">
             {industries.map((item, i) => (
               <li key={i} className="hover:text-blue-400 cursor-pointer">
@@ -157,8 +157,8 @@ export default function Footer() {
       </div>
 
       {/* Digital Marketing Section */}
-      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 mb-8">
-        <h3 className="text-xl font-semibold mb-4 text-center lg:text-left">
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 mb-8 ">
+        <h3 className="text-xl font-semibold mb-4 text-center lg:text-left text-white">
           Digital Marketing Services
         </h3>
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-3 text-sm opacity-80">
@@ -176,7 +176,7 @@ export default function Footer() {
           We Are Provide All Digital Marketing Services
         </h3>
 
-        <div className="flex flex-wrap justify-center lg:justify-start text-sm font-semibold mx-2 text-gray-200 opacity-90">
+        <div className="flex flex-wrap justify-center lg:justify-start text-sm font-semibold mx-1 text-gray-200 opacity-90">
           {Array.from({ length: 26 }, (_, i) => String.fromCharCode(65 + i)).map(
             (letter, i) => (
               <span

@@ -57,22 +57,22 @@ const categories = [
       {
         title: "Effective Social Media Marketing: Building Lasting Engagement",
         desc: "Maintain a strong social presence through consistency, content planning, and meaningful engagement across platforms.",
-        icon: "https://cdn-icons-png.flaticon.com/512/733/733547.png",
+        icon: images212.EffectiveSocialMediaMarketing,
       },
       {
         title: "Influencer Marketing: How to Leverage Partnerships",
         desc: "Collaborate with authentic influencers to build brand credibility and expand your audience organically over time.",
-        icon: "https://cdn-icons-png.flaticon.com/512/4140/4140048.png",
+        icon: images212.InfluencerMarketing,
       },
       {
         title: "Social Proof: Leveraging Customer Feedback and Reviews",
         desc: "Use testimonials, reviews, and client stories to establish trust and enhance credibility across digital platforms.",
-        icon: "https://cdn-icons-png.flaticon.com/512/1828/1828643.png",
+        icon: images212.SocialProof,
       },
       {
         title: "Video Content: Engaging Your Audience through Storytelling",
         desc: "Create educational and emotional video campaigns for platforms like YouTube, Instagram, and your website to increase reach.",
-        icon: "https://cdn-icons-png.flaticon.com/512/3306/3306610.png",
+        icon: images212.VideoContent,
       },
     ],
   },
@@ -82,22 +82,22 @@ const categories = [
       {
         title: "Email Marketing That Lasts: Building and Maintaining Relationships",
         desc: "Evergreen strategies for list segmentation, automation, and personalization that keep your audience engaged and conversions high.",
-        icon: "https://cdn-icons-png.flaticon.com/512/561/561127.png",
+        icon: images212.emailmarketing,
       },
       {
         title: "Marketing Automation: Streamlining Your Digital Efforts",
         desc: "Save time and scale smarter by automating social posts, emails, and lead nurturing while maintaining personal engagement.",
-        icon: "https://cdn-icons-png.flaticon.com/512/2620/2620973.png",
+        icon: images212.MarketingAutomation,
       },
       {
         title: "Paid Media Strategy: Maximizing ROI Over Time",
         desc: "Sustainable PPC and ad strategies focused on targeting, conversion tracking, and effective budget management for long-term success.",
-        icon: "https://cdn-icons-png.flaticon.com/512/2331/2331943.png",
+        icon: images212.PaidMediastrategy,
       },
       {
         title: "Digital Advertising: Maximizing Ad Spend Across Platforms",
         desc: "Build cross-platform ad strategies that optimize budgets and reach the right audience effectively.",
-        icon: "https://cdn-icons-png.flaticon.com/512/733/733585.png",
+        icon: images212.DigitalAdvertising,
       },
     ],
   },
@@ -107,22 +107,22 @@ const categories = [
       {
         title: "Conversion Rate Optimization: Turning Visitors into Customers",
         desc: "Improve CTAs, landing pages, and user flow to create seamless experiences that maximize lead conversion and revenue.",
-        icon: "https://cdn-icons-png.flaticon.com/512/4149/4149656.png",
+        icon: images212.ConversionRate,
       },
       {
         title: "Lead Generation: Strategies for Sustained Business Growth",
         desc: "Implement evergreen tactics like gated content, webinars, and SEO-based lead funnels to build a consistent client pipeline.",
-        icon: "https://cdn-icons-png.flaticon.com/512/1055/1055646.png",
+        icon: images212.LeadGeneration,
       },
       {
         title: "Integrated Digital Marketing Strategy",
         desc: "Combine SEO, content, email, and social media into one holistic system for maximum reach and measurable success.",
-        icon: "https://cdn-icons-png.flaticon.com/512/9071/9071415.png",
+        icon: images212.IntegratedDigital,
       },
       {
         title: "The Importance of Data Analytics in Marketing",
         desc: "Make data-driven marketing decisions that refine strategies and improve campaign results for the long run.",
-        icon: "https://cdn-icons-png.flaticon.com/512/1829/1829817.png",
+        icon: images212.TheImportanceofDataAnalyticsinMarketing,
       },
     ],
   },
@@ -132,22 +132,22 @@ const categories = [
       {
         title: "UX/UI Design in Digital Marketing",
         desc: "Design user-friendly websites and apps that combine aesthetics with function to boost engagement and conversions.",
-        icon: "https://cdn-icons-png.flaticon.com/512/1829/1829582.png",
+        icon: images212.UXUIDesigninDigitalMarketing,
       },
       {
         title: "Personalization Strategies for Enhanced UX",
         desc: "Leverage personalization and dynamic content to build more meaningful interactions with your users and increase retention.",
-        icon: "https://cdn-icons-png.flaticon.com/512/1829/1829817.png",
+        icon: images212.PersonalizationStrategiesforEnhancedUX,
       },
       {
         title: "Crisis Management: Protecting Your Brand Online",
         desc: "Develop proactive strategies for handling negative feedback or PR crises to safeguard your reputation online.",
-        icon: "https://cdn-icons-png.flaticon.com/512/1029/1029183.png",
+        icon: images212.CrisisManagement,
       },
       {
         title: "Affiliate Marketing: Building Collaborative Success",
         desc: "Grow your reach with affiliate programs that reward partnerships and build long-term revenue streams.",
-        icon: "https://cdn-icons-png.flaticon.com/512/1828/1828970.png",
+        icon: images212.AffiliateMarketing,
       },
     ],
   },
@@ -194,15 +194,12 @@ const Services1 = () => {
                       {srv.desc}
                     </p>
                   </div>
-
-                  {/* 📞 Fixed Bottom Call Button */}
                   <a
-                    href="tel:++919999196162" // <-- Apna actual number daaliye
+                    href="tel:++919999196162" 
                     aria-label="Call Now"
                     className="absolute bottom-4 left-1/2 -translate-x-1/2 inline-block group"
                   >
                     <div className="relative flex items-center justify-center gap-2 bg-[#2D0E74] text-white font-semibold rounded-xl px-4 py-2 shadow-md shadow-[#2D0E74]-500/30 hover:shadow-lg hover:shadow-[#2D0E74]-500/40 transition-all duration-300 active:scale-95">
-                      {/* Icon with subtle pulse */}
                       <div className="relative">
                         <div className="absolute inset-0 rounded-full bg-orange-400/50 blur-md scale-75 opacity-0 group-hover:opacity-100 group-hover:scale-100 transition-all duration-500"></div>
                         <svg

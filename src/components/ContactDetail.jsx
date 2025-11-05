@@ -3,49 +3,55 @@ import { FaMapMarkerAlt, FaPhoneAlt, FaEnvelope, FaClock } from "react-icons/fa"
 
 const ContactDetail = () => {
   return (
-    <section className="bg-[#804494] text-white py-10  font-publicSans">
-      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 bg-white rounded-2xl  py-10">
+    <section className="bg-[#804494] text-white py-10 font-publicSans">
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 bg-white rounded-2xl py-10">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 text-center">
-          <div className="flex flex-col items-center gap-2">
+          
+          <div className="flex flex-col items-center gap-2 font-publicSans">
             <FaMapMarkerAlt className="text-3xl text-[#804494]" />
-            <h4 className="font-bold font-opens text-base  sm:text-lg text-[#444444]">
-              Visit Us
-            </h4>
-            <p className="text-sm font-nunito  font-light text-[#444444] leading-relaxed">
-              G-33, 1st Floor<br />
-              Main Road Kalkaji,<br />
+            <h4 className="font-bold font-opens text-base sm:text-lg text-[#444444]">Visit Us</h4>
+            <p className="text-sm font-nunito font-light text-[#444444] leading-relaxed font-publicSans">
+              H-18/B, 2nd Floor,<br />
+              Kalkaji Main Road,<br />
               New Delhi-110019
             </p>
           </div>
+
           <div className="flex flex-col items-center gap-2">
             <FaPhoneAlt className="text-3xl text-[#804494]" />
-            <h4 className="font-bold font-opens text-base sm:text-lg text-[#444444]">
-              Call us
-            </h4>
+            <h4 className="font-bold font-opens text-base sm:text-lg text-[#444444]">Call us</h4>
             <p className="text-sm font-nunito font-light text-[#444444]">
-              +91 9999196162<br />
+              <a 
+                href="tel:+919650638829" 
+                className="break-words font-publicSans"
+              >
+                +91 9650638829
+              </a>
             </p>
           </div>
+
           <div className="flex flex-col items-center gap-2">
             <FaEnvelope className="text-3xl text-[#804494]" />
-            <h4 className="font-bold font-opens text-base sm:text-lg text-[#444444]">
-              Email us
-            </h4>
+            <h4 className="font-bold font-opens text-base sm:text-lg text-[#444444]">Email us</h4>
             <p className="text-sm font-nunito font-light text-[#444444] break-words">
-               info@ifda.in<br />
+              <a 
+                href="mailto:info@webpulsedigital.com"
+                className="break-words font-publicSans"
+              >
+                info@webpulsedigital.com
+              </a>
             </p>
           </div>
+
           <div className="flex flex-col items-center gap-2">
             <FaClock className="text-3xl text-[#804494]" />
-            <h4 className="font-bold font-opens text-base sm:text-lg text-[#444444]">
-              Hours
-            </h4>
-            <p className="text-sm font-nunito font-light text-[#444444]">
+            <h4 className="font-bold font-opens text-base sm:text-lg text-[#444444]">Hours</h4>
+            <p className="text-sm font-nunito font-light text-[#444444] font-publicSans">
               Monday–Sunday:<br />
               10am–7pm<br />
-              {/* <span className="font-semibold">Friday : Fix OFF</span> */}
             </p>
           </div>
+
         </div>
       </div>
     </section>

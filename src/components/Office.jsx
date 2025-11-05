@@ -1,5 +1,5 @@
-import React, { useState } from "react";
-import emailjs from "emailjs-com";
+import React, { useState, useEffect } from "react";
+import emailjs from "@emailjs/browser";
 import { toast } from "react-toastify";
 
 const serviceOptions = [
@@ -24,10 +24,13 @@ const Office = () => {
     email: "",
     message: "",
   });
+  useEffect(() => {
+    emailjs.init(import.meta.env.VITE_EMAILJS_PUBLIC_KEY);
+  }, []);
 
   const handleChange = (e) => {
-    setFormData((p) => ({
-      ...p,
+    setFormData((prev) => ({
+      ...prev,
       [e.target.name]: e.target.value,
     }));
   };
@@ -40,31 +43,39 @@ const Office = () => {
       return;
     }
 
-    setLoading(true);
+    const emailPayload = {
+      name: formData.name,
+      phone: formData.phone,
+      service: formData.service,
+      email: formData.email,
+      message: formData.message,
+      subject: `New Service Inquiry - ${formData.service}`,
+    };
 
-    emailjs
-      .send(
+    try {
+      setLoading(true);
+
+      await emailjs.send(
         import.meta.env.VITE_EMAILJS_SERVICE_ID,
         import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
-        formData,
-        import.meta.env.VITE_EMAILJS_PUBLIC_KEY
-      )
-      .then(() => {
-        toast.success("✅ Form submitted successfully!");
+        emailPayload
+      );
 
-        setFormData({
-          name: "",
-          phone: "",
-          service: "",
-          email: "",
-          message: "",
-        });
-      })
-      .catch((err) => {
-        console.error("EmailJS Error:", err);
-        toast.error("❌ Failed to send message. Try again!");
-      })
-      .finally(() => setLoading(false));
+      toast.success("Message sent successfully!");
+
+      setFormData({
+        name: "",
+        phone: "",
+        service: "",
+        email: "",
+        message: "",
+      });
+    } catch (err) {
+      console.error("EmailJS Error:", err);
+      toast.error("❌ Failed to send email. Try again!");
+    } finally {
+      setLoading(false);
+    }
   };
 
   return (
@@ -73,12 +84,12 @@ const Office = () => {
 
         {/* ✅ Form */}
         <div className="bg-white p-6 rounded-2xl shadow-md">
-          <h2 className="text-2xl sm:text-3xl font-bold text-[#333333] mb-6 text-center md:text-left">
+          <h2 className="text-2xl sm:text-3xl font-bold text-[#333] mb-6">
             Let's connect with us
           </h2>
 
           <form className="space-y-4" onSubmit={handleSubmit}>
-            
+
             <input
               type="text"
               name="name"
@@ -95,7 +106,7 @@ const Office = () => {
               required
               value={formData.phone}
               onChange={handleChange}
-              placeholder="Phone number"
+              placeholder="Phone (10 digits)"
               pattern="^[0-9]{10}$"
               maxLength={10}
               inputMode="numeric"
@@ -111,7 +122,9 @@ const Office = () => {
             >
               <option value="">Select Service</option>
               {serviceOptions.map((srv, i) => (
-                <option key={i} value={srv}>{srv}</option>
+                <option key={i} value={srv}>
+                  {srv}
+                </option>
               ))}
             </select>
 

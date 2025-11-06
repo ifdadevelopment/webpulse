@@ -1,4 +1,3 @@
-// MediaPress.jsx
 import React from "react";
 import { images12 } from "../../data";
 

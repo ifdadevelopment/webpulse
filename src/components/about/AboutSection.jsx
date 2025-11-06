@@ -2,13 +2,14 @@ import { motion } from "framer-motion";
 import { images212 } from "../../../data";
 import { useRef } from "react";
 import { GoTriangleRight } from "react-icons/go";
+import { FaWhatsapp } from "react-icons/fa"; // If you need to add WhatsApp icon
 import "./Aboutus.css";
 
 export default function AboutSection() {
   const counters = [
-    { id: "count3", value: 6256, label: "Project Executed" },
-    { id: "count2", value: 12000, label: "Calls Generated" },
-    { id: "count1", value: 1220, label: "Clients Testimonial" },
+    { id: "count3", value: 250, label: "Project Executed" },
+    { id: "count2", value: 100, label: "Happy Clients" },
+    { id: "count1", value: 35, label: "Experts" },
   ];
 
   const countStarted = useRef(false);
@@ -22,15 +23,15 @@ export default function AboutSection() {
       if (!el) return;
 
       let start = 0;
-      const duration = 2000;
+      const duration = 3000; 
       const step = Math.max(1, value / (duration / 16));
 
       const animate = () => {
         start += step;
         if (start >= value) {
-          el.innerText = value.toLocaleString();
+          el.innerText = `${value.toLocaleString()}+`; 
         } else {
-          el.innerText = Math.floor(start).toLocaleString();
+          el.innerText = `${Math.floor(start).toLocaleString()}+`; 
           requestAnimationFrame(animate);
         }
       };
@@ -42,7 +43,7 @@ export default function AboutSection() {
     countStarted.current = false;
     counters.forEach(({ id }) => {
       const el = document.getElementById(id);
-      if (el) el.innerText = "0";
+      if (el) el.innerText = "0+"; 
     });
   };
 
@@ -80,19 +81,19 @@ export default function AboutSection() {
                 <p className="fw-bold">
                   At Webpulse Digital, we empower brands across industries to elevate their online presence, engage customers, and outperform competitors.
                   From creative brand experiences to high-performance marketing campaigns, we deliver intelligent, result-driven digital solutions tailored to your goals.
-                  <br/>
+                  <br />
                   <strong>What We Do:</strong>
                 </p>
 
                 <ul className="list-unstyled tech-feature-list">
-                  {[
+                  {[ 
                     { bold: "Creative", text: "Websites Design" },
                     { bold: "Performance-Focused", text: "Digital Marketing" },
                     { bold: "Custom", text: "Software Development" },
-                    { bold: "Corporate ", text: "Video & Film Production" },
-                    { bold: "SEO & Organic", text: " Growth Solutions" },
+                    { bold: "Corporate", text: "Video & Film Production" },
+                    { bold: "SEO & Organic", text: "Growth Solutions" },
                     { bold: "Content", text: "Marketing & Branding" },
-                    { bold: "Google", text: "Ads & Paid Campaigns" },
+                    { bold: "Google", text: "Ads & Paid Campaigns" }
                   ].map((item, i) => (
                     <li key={i} className="py-1 text-dark flex items-center gap-2">
                       <span className="ti-control-forward mr-2 color-secondary"><GoTriangleRight /></span>
@@ -113,7 +114,9 @@ export default function AboutSection() {
                   {counters.map((c, i) => (
                     <div key={i} className="counter-single text-start">
                       <h2 className="mb-0 color-secondary">
-                        <span id={c.id} className="display-4 font-bold">0</span>
+                        <span id={c.id} className="display-4 font-bold">
+                          0+
+                        </span>
                       </h2>
                       <strong className="font-bold whitespace-nowrap display-6">{c.label}</strong>
                     </div>
@@ -121,8 +124,8 @@ export default function AboutSection() {
                 </motion.div>
 
                 {/* Buttons */}
-                <div className="action-btns mt-4">
-                  <a href="/contactus" className="bg-indigo-600 text-white btn secondary-solid-btn mr-3 px-3 py-3 rounded-lg shadow">Let's Connect</a>
+                <div className="action-btns mt-4 ">
+                  <a href="/contactus" className="bg-indigo-600 text-white btn secondary-solid-btn mr-10 px-3 py-3 rounded-lg shadow">Let's Connect</a>
                   <a href="/aboutus" className="border border-indigo-600 btn secondary-outline-btn font-bold hover:text-white hover:font-bold mr-3 px-3 py-2 rounded-lg">Learn More</a>
                 </div>
 
@@ -131,11 +134,6 @@ export default function AboutSection() {
           </div>
         </div>
       </section>
-      {/* <div className="box1 absolute inset-0 pointer-events-none hidden md:block">
-        {Array.from({ length: 12 }).map((_, i) => (
-          <div key={i} className="w-10 h-10 border border-gray-300 absolute animate-ping rounded-xl"></div>
-        ))}
-      </div> */}
     </div>
   );
 }

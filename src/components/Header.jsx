@@ -1,6 +1,7 @@
 import React, { useEffect, useRef, useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { HiMenu, HiX } from "react-icons/hi";
+import { FaWhatsapp } from "react-icons/fa";  // Import FaWhatsapp
 
 const NAV = [
   { title: "Home", link: "/" },
@@ -16,12 +17,18 @@ export default function Header() {
   const ref = useRef(null);
 
   const toggleMenu = () => setMenuOpen((v) => !v);
+
+  // Close the menu when the location changes (i.e., on navigation)
   useEffect(() => {
     setMenuOpen(false);
   }, [location.pathname]);
+
+  // Prevent scrolling when the menu is open
   useEffect(() => {
     document.body.style.overflow = menuOpen ? "hidden" : "auto";
   }, [menuOpen]);
+
+  // Close the menu when clicking outside
   useEffect(() => {
     const onDocClick = (e) => {
       if (!ref.current?.contains(e.target)) setMenuOpen(false);
@@ -38,7 +45,18 @@ export default function Header() {
     >
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-20">
-          <Link to="/" className="flex items-center space-x-2">
+          <Link
+            to="https://wa.me/919650638829"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="fixed bottom-6 right-6 bg-green-500 hover:bg-green-600 text-white p-4 rounded-full shadow-lg transition-transform transform hover:scale-110 z-50"
+          >
+            <FaWhatsapp className="text-3xl" />
+          </Link>
+          <Link
+            to="/"
+            className="flex items-center space-x-2"
+          >
             <img src="/logo.png" alt="Logo" className="h-14 w-auto object-contain" />
           </Link>
           <nav className="hidden md:flex items-center text-[20px] gap-6 font-bold font-grotesque text-gray-600">
@@ -79,5 +97,6 @@ export default function Header() {
         </ul>
       </div>
     </header>
+
   );
 }

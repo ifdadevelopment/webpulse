@@ -5,7 +5,7 @@ import {
   FaFacebookF,
   FaLinkedinIn,
   FaInstagram,
-  FaXTwitter,
+  FaPinterest ,
   FaYoutube,
 } from "react-icons/fa6";
 
@@ -30,11 +30,11 @@ export default function Footer() {
   ];
 
   const socials = [
-    { href: "https://facebook.com", icon: <FaFacebookF /> },
-    { href: "https://linkedin.com", icon: <FaLinkedinIn /> },
-    { href: "https://instagram.com", icon: <FaInstagram /> },
-    { href: "https://x.com", icon: <FaXTwitter /> },
-    { href: "https://youtube.com", icon: <FaYoutube /> },
+    { href: "https://www.facebook.com/webpulsedigital", icon: <FaFacebookF /> },
+    { href: "https://www.linkedin.com/company/webpulse-digital-india/", icon: <FaLinkedinIn /> },
+    { href: "https://www.instagram.com/webpulse_digital_/", icon: <FaInstagram /> },
+    { href: "https://www.pinterest.com/webpulsedigital/", icon: <FaPinterest /> },
+    { href: "https://www.youtube.com/@webpulsedigital", icon: <FaYoutube /> },
   ];
 
   return (
@@ -98,7 +98,7 @@ export default function Footer() {
         {/* Social Links */}
         <div>
           <h3 className="text-lg font-semibold mb-3 text-white">Social Links</h3>
-          <div className="flex  mt-5 gap-3">
+          <div className="flex flex-col mt-5 gap-3">
             {socials.map((s, i) => (
               <a
                 key={i}

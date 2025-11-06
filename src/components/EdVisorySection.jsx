@@ -12,9 +12,9 @@ import {
 
 
 const BADGES = [
-  { label: "500+ Clients", color: "#ff603c" },
-  { label: "10+ Years Experience", color: "#ff603c" },
-  { label: "3+ Global Reach", color: "#ff603c" },
+  { label: "100+ Happy Clients", color: "#ff603c" },
+  { label: "5+ Industry Awards", color: "#ff603c" },
+  { label: "250+ Project Executed", color: "#ff603c" },
 ];
 
 const PORTFOLIO = [

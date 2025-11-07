@@ -39,7 +39,7 @@ export default function Footer() {
 
   return (
     <footer className="bg-home-page-gradient text-white font-publicSans">
-      <div className="max-w-6xl mx-auto px-4 items-start sm:px-6 lg:px-8 py-16 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
+      <div className="max-w-6xl mx-auto px-4 items-start sm:px-6 lg:px-8 py-4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
 
         {/* Logo + Contact */}
         <div>
@@ -102,7 +102,7 @@ export default function Footer() {
         {/* Social Links */}
         <div>
           <h3 className="text-lg font-semibold mb-3 text-white">Social Links</h3>
-          <div className="flex flex-col mt-5 gap-3">
+          <div className="flex  mt-5 gap-3">
             {socials.map((s, i) => (
               <a
                 key={i}
@@ -119,7 +119,7 @@ export default function Footer() {
       </div>
 
       {/* Alphabet Bar */}
-      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 mt-5 mb-5">
+      {/* <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 mt-5 mb-5">
         <div className="flex flex-wrap justify-center lg:justify-start text-sm font-semibold mx-1 text-gray-200 opacity-90">
           {Array.from({ length: 26 }, (_, i) => String.fromCharCode(65 + i)).map((letter, i) => (
             <Link
@@ -131,7 +131,7 @@ export default function Footer() {
             </Link>
           ))}
         </div>
-      </div>
+      </div> */}
 
       {/* Footer Bottom */}
       <div className="border-t border-white/10 py-6 px-6 md:px-12">

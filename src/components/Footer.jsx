@@ -5,22 +5,22 @@ import {
   FaFacebookF,
   FaLinkedinIn,
   FaInstagram,
-  FaPinterest ,
+  FaPinterest,
   FaYoutube,
 } from "react-icons/fa6";
 
 export default function Footer() {
- const services = [
-  { name: "Website Designing & Development", link: "/services#website-design-development" },
-  { name: "Customized CRM Solutions", link: "/services#crm-solutions" },
-  { name: "Mobile App Development", link: "/services#mobile-app-development" },
-  { name: "Graphic Design", link: "/services#graphic-design" },
-  { name: "Video Editing", link: "/services#video-editing" },
-  { name: "Social Media Marketing", link: "/services#social-media-marketing" },
-  { name: "SEO & Digital Marketing", link: "/services#seo-digital-marketing" },
-  { name: "Google My Business Listing", link: "/services#google-my-business" },
-  { name: "AI Video Marketing", link: "/services#ai-video-marketing" },
-];
+  const services = [
+    { name: "Website Designing & Development", link: "/services#website-design-development" },
+    { name: "Customized CRM Solutions", link: "/services#crm-solutions" },
+    { name: "Mobile App Development", link: "/services#mobile-app-development" },
+    { name: "Graphic Design", link: "/services#graphic-design" },
+    { name: "Video Editing", link: "/services#video-editing" },
+    { name: "Social Media Marketing", link: "/services#social-media-marketing" },
+    { name: "SEO & Digital Marketing", link: "/services#seo-digital-marketing" },
+    { name: "Google My Business Listing", link: "/services#google-my-business" },
+    { name: "AI Video Marketing", link: "/services#ai-video-marketing" },
+  ];
 
   const quickLinks = [
     { name: "About Us", link: "/aboutus" },
@@ -40,7 +40,7 @@ export default function Footer() {
   return (
     <footer className="bg-home-page-gradient text-white font-publicSans">
       <div className="max-w-6xl mx-auto px-4 items-start sm:px-6 lg:px-8 py-16 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
-        
+
         {/* Logo + Contact */}
         <div>
           <Link to="/" className="block">
@@ -50,7 +50,7 @@ export default function Footer() {
               className="w-[190px] mb-5"
             />
           </Link>
-          
+
           <p className="text-sm opacity-90 leading-6 mb-4">
             <strong>Webpulse Digital</strong> — Your Partner in Growth,
             Innovation & Digital Success.
@@ -64,7 +64,11 @@ export default function Footer() {
           <a href="mailto:info@webpulsedigital.com" className="text-sm mb-2 hover:text-[#34247d]">
             info@webpulsedigital.com
           </a>
-        
+          <br />
+          <a href="tel:+919650638829" className="text-sm mb-2 hover:text-[#34247d]">
+            +91 9650638829
+          </a>
+
         </div>
 
         {/* Services */}
